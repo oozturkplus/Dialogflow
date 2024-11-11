@@ -1,0 +1,156 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "text": {
+          "text": [ "Lütfen seçiniz:" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "event": {
+              "event": "SoruSor"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Soru",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Oneri"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Öneri",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Sikayet"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Şikayet",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "tr"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "f4c66452-e841-4baa-b271-ebcf51aa7727"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Anlayamadım. Tekrar söyleyebilir misin?", "Ne dediğini duyamadım. Tekrar söyler misin?", "Pardon, tekrar eder misin?", "Pardon, tekrar söyleyebilir misin?", "Tekrar söyleyebilir misin?", "Maalesef, anlayamadım.", "Pardon, ne demiştin?", "Bir daha söyler misin?", "Ne dedin?", "Tekrar eder misin?", "Anlayamadım.", "Duyamadım." ]
+        },
+        "languageCode": "tr"
+      } ]
+    },
+    "name": "e59570c7-de1b-4039-bf49-54aa745c8d29"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Anlayamadım. Tekrar söyleyebilir misin?", "Ne dediğini duyamadım. Tekrar söyler misin?", "Pardon, tekrar eder misin?", "Pardon, tekrar söyleyebilir misin?", "Tekrar söyleyebilir misin?", "Maalesef, anlayamadım.", "Pardon, ne demiştin?", "Bir daha söyler misin?", "Ne dedin?", "Tekrar eder misin?", "Anlayamadım.", "Duyamadım." ]
+        },
+        "languageCode": "tr"
+      } ]
+    },
+    "name": "50438c3c-01bc-41e4-b66f-a330818a5b5c"
+  }, {
+    "targetPage": "Sikayet",
+    "event": "Sikayet",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "Sikayet"
+      }, {
+        "parameter": "$session.params.selectedoption_displaytext",
+        "value": "Şikayetiniz"
+      }, {
+        "parameter": "$session.params.selectedoption_displaytext2",
+        "value": "Şikayetinizi"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "94dcdc7a-6422-400e-9296-b14e954ae05d"
+  }, {
+    "targetPage": "Oneri",
+    "event": "Oneri",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.oneri_content",
+        "value": ""
+      }, {
+        "parameter": "$session.params.selectedoption",
+        "value": "Oneri"
+      }, {
+        "parameter": "$session.params.selectedoption_displaytext",
+        "value": "Öneriniz"
+      }, {
+        "parameter": "$session.params.selectedoption_displaytext2",
+        "value": "Önerinizi"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "b30bda63-a165-4af4-b4d3-c6f0bf73a6ac"
+  }, {
+    "targetPage": "Soru",
+    "event": "SoruSor",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "Soru"
+      }, {
+        "parameter": "$session.params.selectedoption_displaytext",
+        "value": "Sorunuz"
+      }, {
+        "parameter": "$session.params.selectedoption_displaytext2",
+        "value": "Sorunuzu"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "a1a5db46-f4f6-45fc-a87b-821c361db97c"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "d790055e-5ba2-42eb-a96c-ea478d622d38",
+    "languageCode": "tr"
+  } ]
+}

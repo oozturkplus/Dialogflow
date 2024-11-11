@@ -1,0 +1,33 @@
+{
+  "name": "750e0ac0-8509-44b3-adf8-80164d21f7a0",
+  "displayName": "OneriFailure",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Önerinizi tekrar yazmak ister misiniz?" ]
+      },
+      "languageCode": "tr"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End",
+    "name": "ae3e2c73-8d6c-46e9-8559-628429cda68d"
+  }, {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Oneri",
+    "name": "f8c4c0d7-63b7-4010-89e8-187ea4b34e71"
+  } ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "92331a6d-d15e-43a0-8ae2-f52e1f916ed7",
+  "displayName": "OneriConfirm",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Öneriniz \"$session.params.oneri_content\" olarak gönderilecektir. Onaylıyor musunuz?" ]
+      },
+      "languageCode": "tr"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Success",
+    "name": "094ef7fb-90d7-409e-89e2-3473b90fde75"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "OneriFailure",
+    "name": "e2ced744-4c5d-4b22-912d-2e7264cd3412"
+  } ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "146647df-e724-4f7d-8538-1ff8bd98ee50",
+  "displayName": "SendMail",
+  "genericWebService": {
+    "uri": "https://us-central1-sample1-415420.cloudfunctions.net/function-1",
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "POST",
+    "requestBody": "{\n  \"content\": \"$session.params.OneriContent\"\n}"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

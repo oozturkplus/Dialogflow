@@ -1,0 +1,11 @@
+{
+  "name": "ed3adf13-6960-4401-9858-2dafc881d363",
+  "displayName": "oneri_getcontent_intent",
+  "parameters": [ {
+    "id": "oneri_content",
+    "entityType": "@sys.any",
+    "redact": true
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 3
+}

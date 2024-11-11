@@ -1,0 +1,147 @@
+{
+  "trainingPhrases": [ {
+    "id": "0b413735-c3d8-4746-bdef-1720ed954040",
+    "parts": [ {
+      "text": "selam",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "d7dfe2df-58bb-40cf-8af8-c23570f4eb9f",
+    "parts": [ {
+      "text": "ne güzel bir gün değil mi",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "1582484c-a388-42d6-882b-ee6de6e82c11",
+    "parts": [ {
+      "text": "selam naber",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "723385a5-0868-4915-8d7c-b87647a4096d",
+    "parts": [ {
+      "text": "merhaba",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "541ffaa6-d58d-4909-8ea1-1eb48d31a0a7",
+    "parts": [ {
+      "text": "selam dostum",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "7792fa5e-4480-4986-b497-f35f789654d1",
+    "parts": [ {
+      "text": "tünaydın",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "64ad86ff-8d38-4ee9-a08d-63bbedc5cc6e",
+    "parts": [ {
+      "text": "seni selamlıyorum",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "ef476c49-a382-43f0-b4ee-9e0735bacc44",
+    "parts": [ {
+      "text": "yüzünü gören cennetlik",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "725febad-f8b6-4585-bfa8-e0f4e0b3912f",
+    "parts": [ {
+      "text": "merhaba naber",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "71938914-5353-4423-a5f8-d6f1828830d9",
+    "parts": [ {
+      "text": "hey",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "a99136d5-9617-4a26-8f6c-75fd05bcb9a1",
+    "parts": [ {
+      "text": "iyi günler",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "5bad87fb-f049-469a-8cc4-e76f9582a51d",
+    "parts": [ {
+      "text": "selamlar",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "85c5b40d-d2d0-4f86-b90e-d3733c853389",
+    "parts": [ {
+      "text": "selam sana",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "5f8d8ab8-6872-4aaf-8fe9-df48abd0a95e",
+    "parts": [ {
+      "text": "tekrar merhaba",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "d0eda3c6-5114-420d-a810-77a8dc065d07",
+    "parts": [ {
+      "text": "selam merhaba",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "8b564971-04ef-42f0-8e3d-84a0ec1db45c",
+    "parts": [ {
+      "text": "naber",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "625add46-63dd-4d8d-96d5-6aa1fa7acc12",
+    "parts": [ {
+      "text": "merhaba demek istedim",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "id": "b076d409-5017-4305-be76-7410294f774b",
+    "parts": [ {
+      "text": "merhabalar",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  } ]
+}

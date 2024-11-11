@@ -1,0 +1,33 @@
+{
+  "name": "50d52c69-70a4-4d97-83fd-586df3c5428d",
+  "displayName": "SikayetFailure",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Şikayetinizi tekrar yazmak ister misiniz?" ]
+      },
+      "languageCode": "tr"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End",
+    "name": "d2db31c1-62e8-4995-aaeb-483829889358"
+  }, {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Sikayet",
+    "name": "fd642e31-fe05-4686-abd8-a4915834e353"
+  } ]
+}

@@ -1,0 +1,24 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "any",
+      "parameterId": "sikayet_content"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "anything",
+      "parameterId": "sikayet_content"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "something",
+      "parameterId": "sikayet_content"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  } ]
+}
