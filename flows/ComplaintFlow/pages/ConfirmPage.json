@@ -1,0 +1,56 @@
+{
+  "name": "58ec8fbf-c419-4616-95e0-8e559e222102",
+  "displayName": "ConfirmPage",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "ConfirmNo",
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "complaintment",
+        "value": null
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Start Page",
+    "name": "1d427f1f-c4ab-4b1a-bb06-b43606e42438"
+  }, {
+    "intent": "ConfirmYes",
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Konu : $session.params.category_name\nİçerik : $session.params.complaintment\nEn yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
+        },
+        "languageCode": "tr"
+      } ],
+      "webhook": "send_mail_ik",
+      "tag": "Mail Gönderildi.",
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "TransitionFlow",
+    "name": "58b54b34-6cce-4b11-b37b-61e74f1c7749"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "End Flow",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Mailiniz gönderilirken bir hata oluştu." ]
+        },
+        "languageCode": "tr"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "4da2d395-99f0-4014-9fcd-edb004a1509c"
+  } ]
+}

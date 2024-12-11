@@ -1,6 +1,6 @@
 {
   "trainingPhrases": [ {
-    "id": "0b413735-c3d8-4746-bdef-1720ed954040",
+    "id": "6846981d-fff8-41ed-bcbe-f2e6bb8c2507",
     "parts": [ {
       "text": "selam",
       "auto": true
@@ -8,7 +8,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "d7dfe2df-58bb-40cf-8af8-c23570f4eb9f",
+    "id": "73dba1b0-28f8-4a96-b3f2-f7fd8d9d624b",
     "parts": [ {
       "text": "ne güzel bir gün değil mi",
       "auto": true
@@ -16,7 +16,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "1582484c-a388-42d6-882b-ee6de6e82c11",
+    "id": "9593157f-9256-483d-be37-df5c70ed21f0",
     "parts": [ {
       "text": "selam naber",
       "auto": true
@@ -24,7 +24,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "723385a5-0868-4915-8d7c-b87647a4096d",
+    "id": "d86280af-a4de-4d0f-84ca-4cfcf5017e37",
     "parts": [ {
       "text": "merhaba",
       "auto": true
@@ -32,7 +32,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "541ffaa6-d58d-4909-8ea1-1eb48d31a0a7",
+    "id": "aa1f74a3-d0a4-4e55-b132-443b4e1ce13e",
     "parts": [ {
       "text": "selam dostum",
       "auto": true
@@ -40,7 +40,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "7792fa5e-4480-4986-b497-f35f789654d1",
+    "id": "8ecdf5da-9179-4986-a85f-dc2fd4c46576",
     "parts": [ {
       "text": "tünaydın",
       "auto": true
@@ -48,7 +48,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "64ad86ff-8d38-4ee9-a08d-63bbedc5cc6e",
+    "id": "847aa4df-49e7-45fe-af79-98d80ff93936",
     "parts": [ {
       "text": "seni selamlıyorum",
       "auto": true
@@ -56,7 +56,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "ef476c49-a382-43f0-b4ee-9e0735bacc44",
+    "id": "d90e3aca-624f-4aa0-a5a8-f4c412bef521",
     "parts": [ {
       "text": "yüzünü gören cennetlik",
       "auto": true
@@ -64,7 +64,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "725febad-f8b6-4585-bfa8-e0f4e0b3912f",
+    "id": "a78a288f-abe1-4248-bee4-dd9bb837c15d",
     "parts": [ {
       "text": "merhaba naber",
       "auto": true
@@ -72,7 +72,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "71938914-5353-4423-a5f8-d6f1828830d9",
+    "id": "cf4f5383-ce80-4243-867c-bead3b67e38c",
     "parts": [ {
       "text": "hey",
       "auto": true
@@ -80,7 +80,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "a99136d5-9617-4a26-8f6c-75fd05bcb9a1",
+    "id": "821cd540-d713-4e97-815e-36737c0512e5",
     "parts": [ {
       "text": "iyi günler",
       "auto": true
@@ -88,7 +88,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "5bad87fb-f049-469a-8cc4-e76f9582a51d",
+    "id": "de60e435-ecc1-4ba6-b7a8-4dd9aa55c7fb",
     "parts": [ {
       "text": "selamlar",
       "auto": true
@@ -96,7 +96,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "85c5b40d-d2d0-4f86-b90e-d3733c853389",
+    "id": "9ef89af3-9b85-4b5b-905c-de17a8009dd7",
     "parts": [ {
       "text": "selam sana",
       "auto": true
@@ -104,7 +104,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "5f8d8ab8-6872-4aaf-8fe9-df48abd0a95e",
+    "id": "5acc5169-c6fc-4e46-bffa-18f69b692d13",
     "parts": [ {
       "text": "tekrar merhaba",
       "auto": true
@@ -112,7 +112,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "d0eda3c6-5114-420d-a810-77a8dc065d07",
+    "id": "c9fd8d3f-5a65-4f3b-97db-c7115d616bdb",
     "parts": [ {
       "text": "selam merhaba",
       "auto": true
@@ -120,7 +120,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "8b564971-04ef-42f0-8e3d-84a0ec1db45c",
+    "id": "1890322a-4084-47fe-bedc-c0289e7c18fa",
     "parts": [ {
       "text": "naber",
       "auto": true
@@ -128,7 +128,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "625add46-63dd-4d8d-96d5-6aa1fa7acc12",
+    "id": "dbca18c0-c378-4e54-9f0f-eb14396db9c9",
     "parts": [ {
       "text": "merhaba demek istedim",
       "auto": true
@@ -136,7 +136,7 @@
     "repeatCount": 1,
     "languageCode": "tr"
   }, {
-    "id": "b076d409-5017-4305-be76-7410294f774b",
+    "id": "1aada636-9eea-49a7-a314-f98674f888cd",
     "parts": [ {
       "text": "merhabalar",
       "auto": true

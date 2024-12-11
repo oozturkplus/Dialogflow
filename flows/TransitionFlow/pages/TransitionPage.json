@@ -1,0 +1,32 @@
+{
+  "name": "5ab3aeaf-ce3d-4e97-a7b1-565a789047d1",
+  "displayName": "TransitionPage",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.yes",
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "ResetPage",
+    "name": "153b2fb9-a103-41d2-83dd-5fbd15592d75"
+  }, {
+    "intent": "confirm.no",
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Size yeniden destek olabilmek için her zaman buradayım.\nİyi günler dilerim." ]
+        },
+        "languageCode": "tr"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "bc90c350-e5e6-40bb-a130-dd7d06c428e2"
+  } ]
+}

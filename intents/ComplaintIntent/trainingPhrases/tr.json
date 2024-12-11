@@ -1,0 +1,58 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Memnun değilim",
+      "parameterId": "any"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Şikayet",
+      "parameterId": "category_type",
+      "auto": true
+    }, {
+      "text": " yapmak istiyorum",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Şikayet",
+      "parameterId": "category_type",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Bir",
+      "parameterId": "number",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "şikayetim",
+      "parameterId": "category_type",
+      "auto": true
+    }, {
+      "text": " var",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Şikayetim",
+      "parameterId": "category_type",
+      "auto": true
+    }, {
+      "text": " var",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  } ]
+}

@@ -1,23 +1,13 @@
 {
-  "name": "00000000-0000-0000-0000-000000000000",
-  "displayName": "Default Start Flow",
-  "description": "A start flow created along with the agent",
+  "name": "beb96097-d933-4cf0-b56c-b80f6b4b5b6f",
+  "displayName": "TransitionFlow",
   "transitionRoutes": [ {
-    "intent": "Default Welcome Intent",
     "condition": "true",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Merhaba, Ben Vestel Dijital Asistanı. Size nasıl yardımcı olabilirim?\n\n\n" ]
-        },
-        "languageCode": "tr"
-      } ],
-      "nextActionOverride": {
-      
-      }
+    
     },
-    "targetFlow": "CategoryFlow",
-    "name": "488e50d4-3384-44e7-93ca-3b16dfe744cf"
+    "targetPage": "TransitionPage",
+    "name": "c594d386-7d7c-461a-b304-bfc225f2c311"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
@@ -29,7 +19,7 @@
         "languageCode": "tr"
       } ]
     },
-    "name": "0a022b11-90db-49d0-a8fb-b4ee6670eed3"
+    "name": "0bef394c-95ca-4d59-a0ae-d25a2e4fc830"
   }, {
     "event": "sys.no-input-default",
     "triggerFulfillment": {
@@ -40,27 +30,16 @@
         "languageCode": "tr"
       } ]
     },
-    "name": "076fed24-32d3-49e8-9c4a-0a41291938bb"
+    "name": "4c8a847a-eb15-46f0-b687-d7ed9f9fbfdb"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
-    "classificationThreshold": 0.30000001,
-    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
-    "multiIntentSettings": {
-    
-    }
-  },
-  "advancedSettings": {
-    "enabled": true
+    "classificationThreshold": 0.30000001
   },
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
-    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
-    "multiIntentSettings": {
-    
-    },
+    "customConfigKey": "0eabb3da-6b7d-4496-a518-f55f44b28d09",
     "languageCode": "tr"
-  } ],
-  "locked": true
+  } ]
 }

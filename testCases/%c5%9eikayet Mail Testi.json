@@ -1,0 +1,106 @@
+{
+  "name": "e8f9cf6e-2db3-48b7-a965-b8b0cd050d62",
+  "displayName": "Şikayet Mail Testi",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Selam"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "CategorySelectionPage",
+        "flow": "CategoryFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Merhaba, Ben Vestel Dijital Asistanı. Size nasıl yardımcı olabilirim?\n\n\n" ]
+      }, {
+        "text": [ "1. Öneri\n2. Şikayet\n3. Soru\nHangi kategoriyi seçiyorsunuz?" ]
+      } ],
+      "currentFlow": {
+        "name": "CategoryFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Şikayetim var"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "ComplaintPage",
+        "flow": "ComplaintFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Lütfen şikayetinizi yazınız." ]
+      } ],
+      "currentFlow": {
+        "name": "ComplaintFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Her şey çok zor"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "TransitionPage",
+        "flow": "TransitionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Geri bildiriminiz için teşekkür ederiz.\nKonu : Şikayet\nİöerik : Her şey çok zor\nEn yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
+      } ],
+      "currentFlow": {
+        "name": "TransitionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hayır"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "ComplaintPage",
+        "flow": "ComplaintFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Size yeniden destek olabilmek için her zaman buradayım.\r\nİyi günler dilerim." ]
+      } ],
+      "currentFlow": {
+        "name": "ComplaintFlow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1733270707,
+    "nanos": 571935000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow"
+  },
+  "languageCode": "tr"
+}

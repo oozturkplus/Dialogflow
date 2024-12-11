@@ -1,23 +1,13 @@
 {
-  "name": "00000000-0000-0000-0000-000000000000",
-  "displayName": "Default Start Flow",
-  "description": "A start flow created along with the agent",
+  "name": "417cf1ca-ed72-40af-86a4-2aea71c54577",
+  "displayName": "CategoryFlow",
   "transitionRoutes": [ {
-    "intent": "Default Welcome Intent",
     "condition": "true",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Merhaba, Ben Vestel Dijital Asistanı. Size nasıl yardımcı olabilirim?\n\n\n" ]
-        },
-        "languageCode": "tr"
-      } ],
-      "nextActionOverride": {
-      
-      }
+    
     },
-    "targetFlow": "CategoryFlow",
-    "name": "488e50d4-3384-44e7-93ca-3b16dfe744cf"
+    "targetPage": "CategorySelectionPage",
+    "name": "4b137108-0287-46fe-8a9d-8059f0acdd1f"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
@@ -29,7 +19,7 @@
         "languageCode": "tr"
       } ]
     },
-    "name": "0a022b11-90db-49d0-a8fb-b4ee6670eed3"
+    "name": "3e3684fc-7810-4023-ba60-280b65ebe9d9"
   }, {
     "event": "sys.no-input-default",
     "triggerFulfillment": {
@@ -40,7 +30,7 @@
         "languageCode": "tr"
       } ]
     },
-    "name": "076fed24-32d3-49e8-9c4a-0a41291938bb"
+    "name": "45591b07-19a6-49ba-a469-2eef2f4901f6"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
@@ -57,6 +47,7 @@
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
     "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "customConfigKey": "82cbb2bc-ae4e-4e70-8153-4034f0eaf570",
     "multiIntentSettings": {
     
     },

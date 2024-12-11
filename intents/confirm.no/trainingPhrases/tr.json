@@ -1,0 +1,31 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "hayır",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Teşekkürler",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Hayır",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Yok",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  } ]
+}

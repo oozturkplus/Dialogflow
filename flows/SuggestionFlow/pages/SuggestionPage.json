@@ -1,0 +1,65 @@
+{
+  "name": "8c5f1310-11d9-4c75-86ac-c7eae1e7ada4",
+  "displayName": "SuggestionPage",
+  "form": {
+    "parameters": [ {
+      "displayName": "suggestion",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Lütfen önerinizi yazınız." ]
+            },
+            "languageCode": "tr"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Geri bildiriminiz için teşekkür ederiz.\nKonu : $session.params.category_name\nİçerik : $session.params.suggestion\nİlgili ekiplerle paylaşılması için onaylıyor musunuz?" ]
+        },
+        "languageCode": "tr"
+      } ],
+      "webhook": "send_mail_ik",
+      "tag": "mail gönderildi.",
+      "setParameterActions": [ {
+        "parameter": "suggestion",
+        "value": "$session.params.suggestion"
+      }, {
+        "parameter": "category_name",
+        "value": "$session.params.category_name"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "ConfirmPage",
+    "name": "fcf0367d-53d2-4be0-93b7-b87ddf289dec"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "End Flow",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Mail gönderimi başarısız." ]
+        },
+        "languageCode": "tr"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "ad4f871c-71cc-4050-baf4-6f13316f9f8a"
+  } ]
+}

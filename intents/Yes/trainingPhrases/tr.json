@@ -1,0 +1,24 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Elbette",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Olabilirsin",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Evet",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  } ]
+}

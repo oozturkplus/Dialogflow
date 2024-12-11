@@ -1,0 +1,53 @@
+{
+  "name": "301916b4-7a6f-4788-9f83-207f02ca6f47",
+  "displayName": "CategorySelectionPage",
+  "form": {
+    "parameters": [ {
+      "displayName": "category_name",
+      "required": true,
+      "entityType": "@category_type",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "1. Öneri\n2. Şikayet\n3. Soru\nHangi kategoriyi seçiyorsunuz?" ]
+      },
+      "languageCode": "tr"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.category_name = \"Şikayet\"",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "ComplaintFlow",
+    "name": "efda093b-cd1b-4c3d-8799-7e73728d12f5"
+  }, {
+    "condition": "$session.params.category_name = \"Öneri\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "SuggestionFlow",
+    "name": "500bc912-ecce-4e84-9219-ae664637de82"
+  }, {
+    "condition": "$session.params.category_name = \"Soru\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "QuestionFlow",
+    "name": "18f42c19-29bb-4969-8cb3-3ed425702a81"
+  } ]
+}

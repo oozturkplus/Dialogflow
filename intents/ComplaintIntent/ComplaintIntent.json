@@ -1,0 +1,16 @@
+{
+  "name": "dccc2324-82ea-44f3-be76-3eb6a2f4165b",
+  "displayName": "ComplaintIntent",
+  "parameters": [ {
+    "id": "category_type",
+    "entityType": "@category_type"
+  }, {
+    "id": "number",
+    "entityType": "@sys.number"
+  }, {
+    "id": "any",
+    "entityType": "@sys.any"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 5
+}

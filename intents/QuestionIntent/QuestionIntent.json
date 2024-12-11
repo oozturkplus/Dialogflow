@@ -1,0 +1,13 @@
+{
+  "name": "ebb03f50-b1b6-4039-9e4f-f39414d3f0fd",
+  "displayName": "QuestionIntent",
+  "parameters": [ {
+    "id": "category_type",
+    "entityType": "@category_type"
+  }, {
+    "id": "number",
+    "entityType": "@sys.number"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 5
+}

@@ -1,0 +1,31 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "evet",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "EVET",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Var",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Evet",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  } ]
+}

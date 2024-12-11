@@ -32,20 +32,44 @@
         "category": "HATE_SPEECH",
         "filterLevel": "BLOCK_SOME"
       } ]
-    }
+    },
+    "responsibleAiFilters": [ {
+      "category": "DANGEROUS_CONTENT",
+      "filterLevel": "MINIMAL_BLOCKING"
+    }, {
+      "category": "SEXUALLY_EXPLICIT_CONTENT",
+      "filterLevel": "MODERATE_BLOCKING"
+    }, {
+      "category": "HARASSMENT",
+      "filterLevel": "MODERATE_BLOCKING"
+    }, {
+      "category": "HATE_SPEECH",
+      "filterLevel": "MODERATE_BLOCKING"
+    } ],
+    "defaultResponsibleAiFilters": [ {
+      "category": "DANGEROUS_CONTENT",
+      "filterLevel": "MINIMAL_BLOCKING"
+    }, {
+      "category": "SEXUALLY_EXPLICIT_CONTENT",
+      "filterLevel": "MODERATE_BLOCKING"
+    }, {
+      "category": "HARASSMENT",
+      "filterLevel": "MODERATE_BLOCKING"
+    }, {
+      "category": "HATE_SPEECH",
+      "filterLevel": "MODERATE_BLOCKING"
+    } ]
   },
   "languageCode": "tr",
   "knowledgeConnectorSettings": {
-    "business": "Vestel Dijital",
-    "agent": "Vestel Dijital Asistanı",
     "groundingSettings": {
       "groundingConfidence": "LOW"
     },
     "mainLlmConfig": {
-      "configSet": "gemini_15_flash_001"
+    
     }
   },
   "llmModelSettings": {
-    "model": "gemini-pro"
+    "model": "gemini-1.5-flash"
   }
 }

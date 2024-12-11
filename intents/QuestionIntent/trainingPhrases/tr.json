@@ -1,0 +1,62 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Soru",
+      "parameterId": "category_type",
+      "auto": true
+    }, {
+      "text": " soracağım",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Soru",
+      "parameterId": "category_type",
+      "auto": true
+    }, {
+      "text": " sorabilir miyim?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Soru",
+      "parameterId": "category_type",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Bir",
+      "parameterId": "number",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "sorum",
+      "parameterId": "category_type",
+      "auto": true
+    }, {
+      "text": " var",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Sorum",
+      "parameterId": "category_type",
+      "auto": true
+    }, {
+      "text": " var",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  } ]
+}

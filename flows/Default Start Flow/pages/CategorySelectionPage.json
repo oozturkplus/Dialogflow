@@ -1,0 +1,37 @@
+{
+  "name": "f9579176-1f91-4b1e-9749-33e3c07e5692",
+  "displayName": "CategorySelectionPage",
+  "form": {
+    "parameters": [ {
+      "displayName": "category_name",
+      "required": true,
+      "entityType": "@category_type",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Hangi kategoriyi seçiyorsunuz?" ]
+            },
+            "languageCode": "tr"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.category_name = \"Şikayet\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "ComplaintFlow",
+    "name": "d07a8898-db9f-4aa6-9319-645a43176799"
+  } ]
+}

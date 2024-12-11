@@ -1,0 +1,51 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Bir",
+      "parameterId": "number",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "öneride",
+      "parameterId": "category_type"
+    }, {
+      "text": " bulunmak istiyorum"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Öneri",
+      "parameterId": "category_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Tavsiyem",
+      "parameterId": "category_type"
+    }, {
+      "text": " var"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Şirket "
+    }, {
+      "text": "hakkında",
+      "parameterId": "any1"
+    }, {
+      "text": " "
+    }, {
+      "text": "geri bildirim",
+      "parameterId": "any1",
+      "auto": true
+    }, {
+      "text": " vermek istiyorum"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  } ]
+}

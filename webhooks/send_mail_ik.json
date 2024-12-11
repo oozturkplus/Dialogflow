@@ -1,0 +1,11 @@
+{
+  "name": "03603e35-65aa-4405-826f-a2064e404a94",
+  "displayName": "send_mail_ik",
+  "genericWebService": {
+    "uri": "https://us-central1-ikya-sor.cloudfunctions.net/send_mail_ik",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Bir",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "sorum",
+      "parameterId": "category_type"
+    }, {
+      "text": " var"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Şikayetim",
+      "parameterId": "category_type",
+      "auto": true
+    }, {
+      "text": " Var",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "Önerim",
+      "parameterId": "category_type"
+    }, {
+      "text": " var"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "şikayet",
+      "parameterId": "category_type",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "öneri",
+      "parameterId": "category_type",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "soru",
+      "parameterId": "category_type",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "3"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "2"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "1"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  } ]
+}

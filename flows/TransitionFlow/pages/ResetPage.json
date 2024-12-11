@@ -1,0 +1,27 @@
+{
+  "name": "42f0622a-0463-4ff9-b766-f13e1d68ea5d",
+  "displayName": "ResetPage",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "category_name",
+      "value": null
+    }, {
+      "parameter": "complaintment",
+      "value": null
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "CategoryFlow",
+    "name": "ed6ef3b5-a868-4f9f-9ab9-6adb57d89a20"
+  } ]
+}

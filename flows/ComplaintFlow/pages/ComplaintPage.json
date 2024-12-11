@@ -1,0 +1,63 @@
+{
+  "name": "3f988d2b-d80a-4410-bcdc-f4717e6f2c73",
+  "displayName": "ComplaintPage",
+  "form": {
+    "parameters": [ {
+      "displayName": "complaintment",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Lütfen şikayetinizi yazınız." ]
+            },
+            "languageCode": "tr"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Geri bildiriminiz için teşekkür ederiz.\nKonu : $session.params.category_name\nİçerik : $session.params.complaintment\nİlgili ekiplerle paylaşılması için onaylıyor musunuz?" ]
+        },
+        "languageCode": "tr"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "category_name",
+        "value": "$session.params.category_name"
+      }, {
+        "parameter": "complaintment",
+        "value": "$session.params.complaintment"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "ConfirmPage",
+    "name": "86e19724-3be8-4767-a587-8bbbe34a583f"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "End Flow",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Mail gönderimi başarısız." ]
+        },
+        "languageCode": "tr"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "12a2fb73-950f-4cff-99ac-95d74b313f79"
+  } ]
+}

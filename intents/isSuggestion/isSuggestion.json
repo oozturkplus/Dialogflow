@@ -1,0 +1,22 @@
+{
+  "name": "d45b65af-a657-4003-a3b0-9ffdb969a565",
+  "displayName": "isSuggestion",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  }, {
+    "id": "any1",
+    "entityType": "@sys.any"
+  }, {
+    "id": "category_type",
+    "entityType": "@category_type"
+  }, {
+    "id": "number",
+    "entityType": "@sys.number"
+  }, {
+    "id": "any",
+    "entityType": "@sys.any"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 4
+}

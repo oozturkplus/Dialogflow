@@ -1,24 +1,6 @@
 {
-  "name": "00000000-0000-0000-0000-000000000000",
-  "displayName": "Default Start Flow",
-  "description": "A start flow created along with the agent",
-  "transitionRoutes": [ {
-    "intent": "Default Welcome Intent",
-    "condition": "true",
-    "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Merhaba, Ben Vestel Dijital Asistanı. Size nasıl yardımcı olabilirim?\n\n\n" ]
-        },
-        "languageCode": "tr"
-      } ],
-      "nextActionOverride": {
-      
-      }
-    },
-    "targetFlow": "CategoryFlow",
-    "name": "488e50d4-3384-44e7-93ca-3b16dfe744cf"
-  } ],
+  "name": "7189aaeb-74d1-40c4-a62e-87e21ec26e8e",
+  "displayName": "QuestionFlow",
   "eventHandlers": [ {
     "event": "sys.no-match-default",
     "triggerFulfillment": {
@@ -29,7 +11,7 @@
         "languageCode": "tr"
       } ]
     },
-    "name": "0a022b11-90db-49d0-a8fb-b4ee6670eed3"
+    "name": "3f058a72-8625-41d5-9862-a5805e283720"
   }, {
     "event": "sys.no-input-default",
     "triggerFulfillment": {
@@ -40,27 +22,15 @@
         "languageCode": "tr"
       } ]
     },
-    "name": "076fed24-32d3-49e8-9c4a-0a41291938bb"
+    "name": "fb984c69-4e96-43e8-ab50-8ff04a69d6c9"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
-    "classificationThreshold": 0.30000001,
-    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
-    "multiIntentSettings": {
-    
-    }
-  },
-  "advancedSettings": {
-    "enabled": true
+    "classificationThreshold": 0.30000001
   },
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
-    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
-    "multiIntentSettings": {
-    
-    },
     "languageCode": "tr"
-  } ],
-  "locked": true
+  } ]
 }

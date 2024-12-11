@@ -1,0 +1,11 @@
+{
+  "name": "ea0e5f97-0d08-4b20-854d-0677d8488832",
+  "displayName": "DialogflowFulfillment",
+  "genericWebService": {
+    "uri": "https://us-central1-ikya-sor.cloudfunctions.net/DialogflowFulfillment",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

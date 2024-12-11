@@ -1,0 +1,13 @@
+{
+  "name": "bbc1f861-971d-4b43-82de-c67eeb768ed9",
+  "displayName": "ConfirmYes",
+  "parameters": [ {
+    "id": "location",
+    "entityType": "@sys.location"
+  }, {
+    "id": "any",
+    "entityType": "@sys.any"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 3
+}

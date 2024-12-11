@@ -1,0 +1,13 @@
+{
+  "name": "660d9c56-c706-4639-8205-9b1e2bed6da9",
+  "displayName": "SuggestionIntent",
+  "parameters": [ {
+    "id": "category_type",
+    "entityType": "@category_type"
+  }, {
+    "id": "number",
+    "entityType": "@sys.number"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 4
+}

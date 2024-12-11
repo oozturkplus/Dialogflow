@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "1",
+    "synonyms": [ "1" ],
+    "languageCode": "tr"
+  }, {
+    "value": "2",
+    "synonyms": [ "2" ],
+    "languageCode": "tr"
+  }, {
+    "value": "3",
+    "synonyms": [ "3" ],
+    "languageCode": "tr"
+  }, {
+    "value": "Soru",
+    "synonyms": [ "Soru" ],
+    "languageCode": "tr"
+  }, {
+    "value": "Öneri",
+    "synonyms": [ "Öneri" ],
+    "languageCode": "tr"
+  }, {
+    "value": "Şikayet",
+    "synonyms": [ "Şikayet" ],
+    "languageCode": "tr"
+  } ]
+}

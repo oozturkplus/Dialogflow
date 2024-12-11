@@ -1,0 +1,10 @@
+{
+  "name": "3903de6c-c7ad-4f42-b072-265925251419",
+  "displayName": "CategoriCardIntent",
+  "parameters": [ {
+    "id": "category_type",
+    "entityType": "@category_type"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 9
+}
