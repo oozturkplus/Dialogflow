@@ -4,11 +4,53 @@
   "description": "A start flow created along with the agent",
   "transitionRoutes": [ {
     "intent": "Default Welcome Intent",
-    "condition": "true",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Merhaba, Ben Vestel Dijital Asistanı. Size nasıl yardımcı olabilirim?\n\n\n" ]
+          "text": [ "Merhaba, Ben Vestel Dijital Asistanı\nSize nasıl yardımcı olabilirim?\n\n" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "text": {
+          "text": [ "Lütfen seçiniz:" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "event": {
+              "event": "Soru"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Soru",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Oneri"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Öneri",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Sikayet"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Şikayet",
+            "type": "button"
+          } ] ]
         },
         "languageCode": "tr"
       } ],
@@ -16,7 +58,6 @@
       
       }
     },
-    "targetFlow": "CategoryFlow",
     "name": "488e50d4-3384-44e7-93ca-3b16dfe744cf"
   } ],
   "eventHandlers": [ {
@@ -41,6 +82,45 @@
       } ]
     },
     "name": "076fed24-32d3-49e8-9c4a-0a41291938bb"
+  }, {
+    "targetFlow": "ComplaintFlow",
+    "event": "Sikayet",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "Sikayet"
+      }, {
+        "parameter": "$session.params.category_name",
+        "value": "Şikayet"
+      } ]
+    },
+    "name": "75882912-90eb-47a0-84ca-c3c8e52facff"
+  }, {
+    "targetFlow": "QuestionFlow",
+    "event": "Soru",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "Soru"
+      }, {
+        "parameter": "$session.params.category_name",
+        "value": "Soru"
+      } ]
+    },
+    "name": "3717f855-6f07-42d3-abc1-de09cd9db399"
+  }, {
+    "targetFlow": "SuggestionFlow",
+    "event": "Oneri",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "Oneri"
+      }, {
+        "parameter": "$session.params.category_name",
+        "value": "Öneri"
+      } ]
+    },
+    "name": "63b7f3c5-566b-4fca-a1a1-7a21a89faa60"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
@@ -61,6 +141,5 @@
     
     },
     "languageCode": "tr"
-  } ],
-  "locked": true
+  } ]
 }

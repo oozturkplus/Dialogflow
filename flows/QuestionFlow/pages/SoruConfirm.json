@@ -1,0 +1,33 @@
+{
+  "name": "d379e743-0e70-42e5-9bdb-e98c6a1c8f60",
+  "displayName": "SoruConfirm",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Sorunuza aldığınız yanıt yeterli midir?" ]
+      },
+      "languageCode": "tr"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End",
+    "name": "d7d9ad1a-31e6-4b85-9fbf-7240b37ea11f"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SoruGonder",
+    "name": "cd6fb5e6-b156-46dc-a52f-b649f5631d8c"
+  } ]
+}

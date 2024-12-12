@@ -1,0 +1,108 @@
+{
+  "name": "29afcf80-0028-4c46-927a-67852612019a",
+  "displayName": "Soru",
+  "form": {
+    "parameters": [ {
+      "displayName": "soru_content",
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Sorunuzu yazınız" ]
+      },
+      "languageCode": "tr"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorunuzu anlayamadım, lütfen tekrar yazınız" ]
+        },
+        "languageCode": "tr"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "soru_content",
+        "value": "$request.user-utterance"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "dbc5c0bb-501e-402f-a32d-bf6226c5816e"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorunuzu anlayamadım, lütfen tekrar yazınız" ]
+        },
+        "languageCode": "tr"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "soru_content",
+        "value": "$request.user-utterance"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "8ddd00c6-49a2-4dc8-8ea5-3482d7e9b044"
+  }, {
+    "targetPage": "SoruGonder",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "c15381e9-f96a-437f-b7b5-8acadc57e43b"
+  } ],
+  "knowledgeConnectorSettings": {
+    "enabled": true,
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$request.knowledge.answers[0]" ]
+        },
+        "languageCode": "tr"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "soru_content",
+        "value": "$request.user-utterance"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "SoruConfirm",
+    "dataStoreConnections": [ {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/823196520765/locations/global/collections/default_collection/dataStores/ik-ya-sor-v2-data-store_1731488592652",
+      "languageCode": "tr",
+      "documentProcessingMode": "CHUNKS",
+      "aclConfig": {
+      
+      }
+    }, {
+      "dataStoreType": "STRUCTURED",
+      "dataStore": "projects/823196520765/locations/global/collections/default_collection/dataStores/ikyasor-faq-data_1733321804791",
+      "languageCode": "tr",
+      "documentProcessingMode": "DOCUMENTS",
+      "aclConfig": {
+      
+      }
+    } ]
+  }
+}

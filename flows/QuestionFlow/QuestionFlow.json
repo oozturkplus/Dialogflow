@@ -1,6 +1,15 @@
 {
-  "name": "7189aaeb-74d1-40c4-a62e-87e21ec26e8e",
+  "name": "fb7473fc-ee86-47df-8ece-a604f0a12d6e",
   "displayName": "QuestionFlow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Soru",
+    "name": "b95b899c-4e88-436f-8be5-54899c4a9afc"
+  } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
     "triggerFulfillment": {
@@ -11,7 +20,7 @@
         "languageCode": "tr"
       } ]
     },
-    "name": "3f058a72-8625-41d5-9862-a5805e283720"
+    "name": "e59570c7-de1b-4039-bf49-54aa745c8d29"
   }, {
     "event": "sys.no-input-default",
     "triggerFulfillment": {
@@ -22,15 +31,26 @@
         "languageCode": "tr"
       } ]
     },
-    "name": "fb984c69-4e96-43e8-ab50-8ff04a69d6c9"
+    "name": "50438c3c-01bc-41e4-b66f-a330818a5b5c"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
-    "classificationThreshold": 0.30000001
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
   },
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "multiIntentSettings": {
+    
+    },
     "languageCode": "tr"
   } ]
 }

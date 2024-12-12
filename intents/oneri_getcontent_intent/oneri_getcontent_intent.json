@@ -1,0 +1,11 @@
+{
+  "name": "34a79102-6889-4b77-b371-0fd8b79824d5",
+  "displayName": "oneri_getcontent_intent",
+  "parameters": [ {
+    "id": "oneri_content",
+    "entityType": "@sys.any",
+    "redact": true
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 3
+}

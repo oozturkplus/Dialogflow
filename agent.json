@@ -30,6 +30,9 @@
   "textToSpeechSettings": {
   
   },
+  "genAppBuilderSettings": {
+    "engine": "projects/823196520765/locations/global/collections/default_collection/engines/3870e9ca-933e-4bb0-b1c7-535cd66f564e"
+  },
   "duplexSettings": {
   
   },

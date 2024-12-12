@@ -1,6 +1,6 @@
 {
   "fallbackSettings": {
-    "selectedPrompt": "Default"
+  
   },
   "generativeSafetySettings": {
     "raiSettings": {
@@ -62,14 +62,12 @@
   },
   "languageCode": "tr",
   "knowledgeConnectorSettings": {
-    "groundingSettings": {
-      "groundingConfidence": "LOW"
-    },
+    "business": "Vestel",
     "mainLlmConfig": {
     
     }
   },
   "llmModelSettings": {
-    "model": "gemini-1.5-flash"
+  
   }
 }

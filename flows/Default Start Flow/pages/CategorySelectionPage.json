@@ -31,7 +31,6 @@
     "triggerFulfillment": {
     
     },
-    "targetFlow": "ComplaintFlow",
     "name": "d07a8898-db9f-4aa6-9319-645a43176799"
   } ]
 }

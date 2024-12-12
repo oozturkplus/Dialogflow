@@ -1,0 +1,26 @@
+{
+  "name": "4266c670-0eb1-449f-8509-77bc05415566",
+  "displayName": "Success",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "İletiniz başarıyla gönderildi" ]
+      },
+      "languageCode": "tr"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End",
+    "name": "c93b7ec5-aadc-467f-9afa-05bef89bd86d"
+  } ]
+}

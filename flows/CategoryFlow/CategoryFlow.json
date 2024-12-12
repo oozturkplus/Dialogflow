@@ -47,11 +47,9 @@
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
     "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
-    "customConfigKey": "82cbb2bc-ae4e-4e70-8153-4034f0eaf570",
     "multiIntentSettings": {
     
     },
     "languageCode": "tr"
-  } ],
-  "locked": true
+  } ]
 }

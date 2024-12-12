@@ -1,0 +1,33 @@
+{
+  "name": "0fe63050-2120-48ac-b91f-2544712149f5",
+  "displayName": "SoruGonder",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Sorunuzu yanıtlayamadım, sorunuzu \"$session.params.soru_content\" şeklinde mail olarak göndereceğim. Onaylıyor musunuz?" ]
+      },
+      "languageCode": "tr"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End",
+    "name": "8825d104-5cdf-4bdd-bc33-5087d55f3959"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Soru",
+    "name": "a399a67a-86f7-4786-be12-86603f359c27"
+  } ]
+}

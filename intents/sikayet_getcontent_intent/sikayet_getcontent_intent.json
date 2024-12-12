@@ -1,0 +1,11 @@
+{
+  "name": "3f7a91ab-bc70-46d7-b476-7e0555f67360",
+  "displayName": "sikayet_getcontent_intent",
+  "parameters": [ {
+    "id": "sikayet_content",
+    "entityType": "@sys.any",
+    "redact": true
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 3
+}
