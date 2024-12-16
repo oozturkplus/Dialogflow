@@ -1,13 +1,6 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
-      "text": "Memnun değilim",
-      "parameterId": "any"
-    } ],
-    "repeatCount": 1,
-    "languageCode": "tr"
-  }, {
-    "parts": [ {
       "text": "Şikayet",
       "parameterId": "category_type",
       "auto": true
@@ -28,7 +21,6 @@
   }, {
     "parts": [ {
       "text": "Bir",
-      "parameterId": "number",
       "auto": true
     }, {
       "text": " ",

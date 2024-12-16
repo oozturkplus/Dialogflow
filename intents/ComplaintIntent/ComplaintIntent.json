@@ -4,13 +4,7 @@
   "parameters": [ {
     "id": "category_type",
     "entityType": "@category_type"
-  }, {
-    "id": "number",
-    "entityType": "@sys.number"
-  }, {
-    "id": "any",
-    "entityType": "@sys.any"
   } ],
   "priority": 500000,
-  "numTrainingPhrases": 5
+  "numTrainingPhrases": 4
 }

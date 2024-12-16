@@ -58,21 +58,42 @@
   }, {
     "intent": "QuestionIntent",
     "triggerFulfillment": {
-    
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "Soru"
+      }, {
+        "parameter": "$session.params.category_name",
+        "value": "Soru"
+      }, {
+        "parameter": "$session.params.mail_subject",
+        "value": "Soru"
+      } ]
     },
     "targetFlow": "QuestionFlow",
     "name": "ef5a94b9-e9f6-41cd-81aa-cec70fc26f05"
   }, {
     "intent": "ComplaintIntent",
     "triggerFulfillment": {
-    
+      "setParameterActions": [ {
+        "parameter": "$session.params.mail_subject",
+        "value": "Şikayet"
+      } ]
     },
     "targetFlow": "ComplaintFlow",
     "name": "02d7f3d6-559d-4c70-ab44-90b7f5985750"
   }, {
     "intent": "SuggestionIntent",
     "triggerFulfillment": {
-    
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "Öneri"
+      }, {
+        "parameter": "$session.params.category_name",
+        "value": "Oneri"
+      }, {
+        "parameter": "$session.params.mail_subject",
+        "value": "Oneri"
+      } ]
     },
     "targetFlow": "SuggestionFlow",
     "name": "4cf29c8f-5d02-428b-b7e1-8f0fe65dda72"
