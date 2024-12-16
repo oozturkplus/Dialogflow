@@ -3,5 +3,28 @@
   "displayName": "IsThereAnyOtherThing",
   "form": {
   
-  }
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Size başka bir konuda daha yardımcı olabilir miyim?" ]
+      },
+      "languageCode": "tr"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "d809a848-9f16-4940-8054-96802fcf8261"
+  }, {
+    "intent": "confirm.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End",
+    "name": "05fd0106-4add-4731-919a-12a4d965c321"
+  } ]
 }

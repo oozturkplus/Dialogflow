@@ -13,11 +13,27 @@
     } ]
   },
   "entryFulfillment": {
-    "messages": [ {
-      "text": {
-        "text": [ "Sorunuzu yazınız" ]
-      },
-      "languageCode": "tr"
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.answer = \"notenough\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Sizi anladığımdan emin değilim.Lütfen sorunuzu farklı bir şekilde yeniden yazınız." ]
+            },
+            "languageCode": "tr"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Sorunuzu yazınız" ]
+            },
+            "languageCode": "tr"
+          }
+        } ]
+      } ]
     } ],
     "nextActionOverride": {
     

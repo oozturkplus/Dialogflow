@@ -7,7 +7,7 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "Sorunuza aldığınız yanıt yeterli midir?" ]
+        "text": [ "Bu cevap size yardımcı oldu mu?" ]
       },
       "languageCode": "tr"
     } ],
@@ -20,14 +20,17 @@
     "triggerFulfillment": {
     
     },
-    "targetPage": "End",
+    "targetPage": "IsThereAnyOtherThing",
     "name": "d7d9ad1a-31e6-4b85-9fbf-7240b37ea11f"
   }, {
     "intent": "confirmation.no",
     "triggerFulfillment": {
-    
+      "setParameterActions": [ {
+        "parameter": "$session.params.answer",
+        "value": "notenough"
+      } ]
     },
-    "targetPage": "SoruGonder",
+    "targetPage": "Soru",
     "name": "cd6fb5e6-b156-46dc-a52f-b649f5631d8c"
   } ]
 }

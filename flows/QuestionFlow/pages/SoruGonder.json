@@ -24,7 +24,50 @@
   "transitionRoutes": [ {
     "intent": "ConfirmYes",
     "triggerFulfillment": {
-    
+      "messages": [ {
+        "text": {
+          "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "event": {
+              "event": "Soru"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Soru",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Oneri"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Öneri",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Sikayet"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Şikayet",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "tr"
+      } ]
     },
     "targetFlow": "Default Start Flow",
     "name": "a356829b-c605-4a2d-af59-c163897a10c1"

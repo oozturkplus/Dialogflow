@@ -1,0 +1,52 @@
+{
+  "name": "476a5f2b-8bac-4e44-80d3-d966a7e2f39b",
+  "displayName": "RouteSuggestionPage",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "newSuggestion",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mail_content",
+        "value": null
+      } ]
+    },
+    "targetPage": "Start Page",
+    "name": "a3579fea-e59d-434f-a90d-406dc1c6211c"
+  }, {
+    "intent": "noSuggestion",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mail_content",
+        "value": null
+      }, {
+        "parameter": "mail_subject",
+        "value": null
+      } ]
+    },
+    "targetFlow": "CategoryFlow",
+    "name": "e17f7e62-023f-4fce-8b0a-daa7eb354dd2"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Start Page",
+    "event": "Yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "Yes"
+      } ]
+    },
+    "name": "da77cec3-0049-4242-b5ec-437d99275b26"
+  }, {
+    "targetFlow": "CategoryFlow",
+    "event": "No",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "No"
+      } ]
+    },
+    "name": "481efd06-aaaf-4274-bcf6-947a8049ae57"
+  } ]
+}
