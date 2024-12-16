@@ -1,0 +1,11 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Hayır",
+      "parameterId": "geo-city",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  } ]
+}

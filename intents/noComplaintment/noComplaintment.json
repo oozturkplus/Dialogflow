@@ -1,0 +1,10 @@
+{
+  "name": "525d3b9c-ba70-45c9-a8cf-65566b5a83e1",
+  "displayName": "noComplaintment",
+  "parameters": [ {
+    "id": "geo-city",
+    "entityType": "@sys.geo-city"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 1
+}

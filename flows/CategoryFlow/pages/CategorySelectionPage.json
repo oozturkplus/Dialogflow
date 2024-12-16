@@ -3,11 +3,18 @@
   "displayName": "CategorySelectionPage",
   "form": {
     "parameters": [ {
-      "displayName": "category_name",
+      "displayName": "mail_subject",
       "required": true,
-      "entityType": "@category_type",
+      "entityType": "@mail_subject",
       "fillBehavior": {
         "initialPromptFulfillment": {
+          "setParameterActions": [ {
+            "parameter": "mail_subject",
+            "value": null
+          }, {
+            "parameter": "mail_content",
+            "value": null
+          } ],
           "nextActionOverride": {
           
           }
@@ -18,17 +25,74 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "1. Öneri\n2. Şikayet\n3. Soru\nHangi kategoriyi seçiyorsunuz?" ]
+        "text": [ "Hangi kategoriyi seçiyorsunuz?" ]
       },
       "languageCode": "tr"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "event": {
+            "event": "Soru"
+          },
+          "icon": {
+            "color": "#FF9800",
+            "type": "chevron_right"
+          },
+          "mode": "blocking",
+          "text": "Soru",
+          "type": "button"
+        }, {
+          "event": {
+            "event": "Oneri"
+          },
+          "icon": {
+            "color": "#FF9800",
+            "type": "chevron_right"
+          },
+          "mode": "blocking",
+          "text": "Öneri",
+          "type": "button"
+        }, {
+          "event": {
+            "event": "Sikayet"
+          },
+          "icon": {
+            "color": "#FF9800",
+            "type": "chevron_right"
+          },
+          "mode": "blocking",
+          "text": "Şikayet",
+          "type": "button"
+        }, {
+          "event": {
+            "event": "Cikis"
+          },
+          "icon": {
+            "color": "#FF9800",
+            "type": "chevron_right"
+          },
+          "mode": "blocking",
+          "text": "Çıkış",
+          "type": "button"
+        } ] ]
+      },
+      "languageCode": "tr"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "mail_subject",
+      "value": null
     } ],
     "nextActionOverride": {
     
     }
   },
   "transitionRoutes": [ {
-    "condition": "$session.params.category_name = \"Şikayet\"",
+    "condition": "$session.params.mail_subject = \"Şikayet\"",
     "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mail_subject",
+        "value": "$session.params.mail_subject"
+      } ],
       "nextActionOverride": {
       
       }
@@ -36,18 +100,48 @@
     "targetFlow": "ComplaintFlow",
     "name": "efda093b-cd1b-4c3d-8799-7e73728d12f5"
   }, {
-    "condition": "$session.params.category_name = \"Öneri\"",
+    "condition": "$session.params.mail_subject = \"Öneri\"",
     "triggerFulfillment": {
     
     },
     "targetFlow": "SuggestionFlow",
     "name": "500bc912-ecce-4e84-9219-ae664637de82"
   }, {
-    "condition": "$session.params.category_name = \"Soru\"",
+    "condition": "$session.params.mail_subject = \"Soru\"",
     "triggerFulfillment": {
     
     },
     "targetFlow": "QuestionFlow",
     "name": "18f42c19-29bb-4969-8cb3-3ed425702a81"
+  } ],
+  "eventHandlers": [ {
+    "targetFlow": "ComplaintFlow",
+    "event": "Sikayet",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "Sikayet"
+      }, {
+        "parameter": "$session.params.mail_subject",
+        "value": "Şikayet"
+      } ]
+    },
+    "name": "7ae8c8ff-15e8-4f41-ab21-2afd32b6eb0c"
+  }, {
+    "targetPage": "End Flow",
+    "event": "Cikis",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Size yeniden destek olabilmek için her zaman buradayım.\nİyi günler dilerim." ]
+        },
+        "languageCode": "tr"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "Cikis"
+      } ]
+    },
+    "name": "d5c6c17c-4a9d-48d4-ae9a-f0fd0390a7f4"
   } ]
 }

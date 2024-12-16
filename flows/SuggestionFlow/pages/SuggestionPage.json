@@ -3,7 +3,7 @@
   "displayName": "SuggestionPage",
   "form": {
     "parameters": [ {
-      "displayName": "suggestion",
+      "displayName": "mail_content",
       "required": true,
       "entityType": "@sys.any",
       "fillBehavior": {
@@ -26,18 +26,18 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Geri bildiriminiz için teşekkür ederiz.\nKonu : $session.params.category_name\nİçerik : $session.params.suggestion\nİlgili ekiplerle paylaşılması için onaylıyor musunuz?" ]
+          "text": [ "Geri bildiriminiz için teşekkür ederiz.\nKonu : $session.params.mail_subject\nİçerik : $session.params.mail_content\nİlgili ekiplerle paylaşılması için onaylıyor musunuz?" ]
         },
         "languageCode": "tr"
       } ],
       "webhook": "send_mail_ik",
-      "tag": "mail gönderildi.",
+      "tag": "Mail gönderildi.",
       "setParameterActions": [ {
-        "parameter": "suggestion",
-        "value": "$session.params.suggestion"
+        "parameter": "mail_content",
+        "value": "$session.params.mail_content"
       }, {
-        "parameter": "category_name",
-        "value": "$session.params.category_name"
+        "parameter": "mail_subject",
+        "value": "$session.params.category_type"
       } ],
       "nextActionOverride": {
       

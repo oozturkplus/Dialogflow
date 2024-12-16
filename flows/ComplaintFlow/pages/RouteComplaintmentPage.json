@@ -1,0 +1,55 @@
+{
+  "name": "fe531f9c-14d0-4c9a-a388-9dcfaf3fc317",
+  "displayName": "RouteComplaintmentPage",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "newComplaintment",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mail_content",
+        "value": null
+      } ]
+    },
+    "targetPage": "Start Page",
+    "name": "f071070a-185c-4178-b06a-edef3fabe917"
+  }, {
+    "intent": "noComplaintment",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "mail_content",
+        "value": null
+      }, {
+        "parameter": "mail_subject",
+        "value": null
+      } ]
+    },
+    "targetFlow": "CategoryFlow",
+    "name": "c3d1c748-935f-412d-acb7-fa0ddcb6ce0d"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Start Page",
+    "event": "Yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "Yes"
+      } ]
+    },
+    "name": "3ebc12f2-65ab-4a25-9b6d-a48120a0f5d6"
+  }, {
+    "targetFlow": "CategoryFlow",
+    "event": "No",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "No"
+      } ]
+    },
+    "name": "8ec67215-f219-48a8-95cb-750a0cccbef1"
+  } ]
+}

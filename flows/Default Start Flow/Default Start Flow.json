@@ -4,15 +4,11 @@
   "description": "A start flow created along with the agent",
   "transitionRoutes": [ {
     "intent": "Default Welcome Intent",
+    "condition": "true",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Merhaba, Ben Vestel Dijital Asistanı\nSize nasıl yardımcı olabilirim?\n\n" ]
-        },
-        "languageCode": "tr"
-      }, {
-        "text": {
-          "text": [ "Lütfen seçiniz:" ]
+          "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
         },
         "languageCode": "tr"
       }, {
@@ -59,6 +55,27 @@
       }
     },
     "name": "488e50d4-3384-44e7-93ca-3b16dfe744cf"
+  }, {
+    "intent": "QuestionIntent",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "QuestionFlow",
+    "name": "ef5a94b9-e9f6-41cd-81aa-cec70fc26f05"
+  }, {
+    "intent": "ComplaintIntent",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "ComplaintFlow",
+    "name": "02d7f3d6-559d-4c70-ab44-90b7f5985750"
+  }, {
+    "intent": "SuggestionIntent",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "SuggestionFlow",
+    "name": "4cf29c8f-5d02-428b-b7e1-8f0fe65dda72"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
@@ -90,7 +107,7 @@
         "parameter": "$session.params.selectedoption",
         "value": "Sikayet"
       }, {
-        "parameter": "$session.params.category_name",
+        "parameter": "$session.params.mail_subject",
         "value": "Şikayet"
       } ]
     },
@@ -105,6 +122,9 @@
       }, {
         "parameter": "$session.params.category_name",
         "value": "Soru"
+      }, {
+        "parameter": "$session.params.mail_subject",
+        "value": "Soru"
       } ]
     },
     "name": "3717f855-6f07-42d3-abc1-de09cd9db399"
@@ -118,9 +138,23 @@
       }, {
         "parameter": "$session.params.category_name",
         "value": "Öneri"
+      }, {
+        "parameter": "$session.params.mail_subject",
+        "value": "Öneri"
       } ]
     },
     "name": "63b7f3c5-566b-4fca-a1a1-7a21a89faa60"
+  }, {
+    "event": "sys.unknown-event",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "bilinmiyor" ]
+        },
+        "languageCode": "tr"
+      } ]
+    },
+    "name": "4ee8e33b-ae05-4c4e-96c3-ba98a7d35cba"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",

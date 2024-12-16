@@ -6,10 +6,10 @@
   },
   "entryFulfillment": {
     "setParameterActions": [ {
-      "parameter": "category_name",
+      "parameter": "mail_subject",
       "value": null
     }, {
-      "parameter": "complaintment",
+      "parameter": "mail_content",
       "value": null
     } ],
     "nextActionOverride": {

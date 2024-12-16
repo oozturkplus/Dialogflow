@@ -7,27 +7,45 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "Sorunuzu yanıtlayamadım, sorunuzu \"$session.params.soru_content\" şeklinde mail olarak göndereceğim. Onaylıyor musunuz?" ]
+        "text": [ "Sorunuzun yanıtlanması için konuyu ilgili birime aktardım. En kısa sürede sizinle iletişime geçilecektir.\nSize başka bir konuda daha yardımcı olabilir miyim?" ]
       },
       "languageCode": "tr"
+    } ],
+    "webhook": "send_mail_ik",
+    "tag": "SendMailQuestion",
+    "setParameterActions": [ {
+      "parameter": "$session.params.mail_subject",
+      "value": "Yanıtlanamayan Soru"
     } ],
     "nextActionOverride": {
     
     }
   },
   "transitionRoutes": [ {
-    "intent": "confirmation.yes",
+    "intent": "ConfirmYes",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "a356829b-c605-4a2d-af59-c163897a10c1"
+  }, {
+    "intent": "ConfirmNo",
     "triggerFulfillment": {
     
     },
     "targetPage": "End",
-    "name": "8825d104-5cdf-4bdd-bc33-5087d55f3959"
-  }, {
-    "intent": "confirmation.no",
+    "name": "8cca7bfb-203d-4ebc-8d31-de40a3da1d5a"
+  } ],
+  "eventHandlers": [ {
+    "event": "webhook.error",
     "triggerFulfillment": {
-    
+      "messages": [ {
+        "text": {
+          "text": [ "Mail gönderilirken bir hata oluştu" ]
+        },
+        "languageCode": "tr"
+      } ]
     },
-    "targetPage": "Soru",
-    "name": "a399a67a-86f7-4786-be12-86603f359c27"
+    "name": "1b301e47-3879-4228-ac91-e88b1aa55219"
   } ]
 }

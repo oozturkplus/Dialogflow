@@ -9,7 +9,7 @@
     "condition": "true",
     "triggerFulfillment": {
       "setParameterActions": [ {
-        "parameter": "suggestion",
+        "parameter": "mail_content",
         "value": null
       } ],
       "nextActionOverride": {
@@ -24,7 +24,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Konu : $session.params.category_name\nİçerik : $session.params.suggestion\nEn yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
+          "text": [ "Konu : $session.params.mail_subject\nİçerik : $session.params.mail_content\nEn yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
         },
         "languageCode": "tr"
       } ],

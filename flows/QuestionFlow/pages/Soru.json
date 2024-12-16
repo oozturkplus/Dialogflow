@@ -28,12 +28,15 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Sorunuzu anlayamadım, lütfen tekrar yazınız" ]
+          "text": [ "Sizi anladığımdan emin değilim.\nLütfen sorunuzu farklı bir şekilde yeniden yazınız." ]
         },
         "languageCode": "tr"
       } ],
       "setParameterActions": [ {
         "parameter": "soru_content",
+        "value": "$request.user-utterance"
+      }, {
+        "parameter": "$session.params.mail_content",
         "value": "$request.user-utterance"
       } ],
       "nextActionOverride": {
@@ -46,12 +49,15 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Sorunuzu anlayamadım, lütfen tekrar yazınız" ]
+          "text": [ "Sizi anladığımdan emin değilim.\nLütfen sorunuzu farklı bir şekilde yeniden yazınız." ]
         },
         "languageCode": "tr"
       } ],
       "setParameterActions": [ {
         "parameter": "soru_content",
+        "value": "$request.user-utterance"
+      }, {
+        "parameter": "$session.params.mail_content",
         "value": "$request.user-utterance"
       } ],
       "nextActionOverride": {

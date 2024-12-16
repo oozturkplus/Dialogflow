@@ -28,5 +28,32 @@
     },
     "targetPage": "End Flow",
     "name": "bc90c350-e5e6-40bb-a130-dd7d06c428e2"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "ResetPage",
+    "event": "NewSessionYes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "NewSessionYes"
+      } ]
+    },
+    "name": "8347cbc4-64f6-4bcc-ab6c-6a3945b2b612"
+  }, {
+    "targetPage": "End Flow",
+    "event": "NewSessionNo",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Size yeniden destek olabilmek için her zaman buradayım.\r\nİyi günler dilerim." ]
+        },
+        "languageCode": "tr"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "NewSessionNo"
+      } ]
+    },
+    "name": "1e27149d-396b-4c16-af1b-0310885f42ad"
   } ]
 }

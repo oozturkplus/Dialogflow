@@ -3,7 +3,7 @@
   "displayName": "ComplaintPage",
   "form": {
     "parameters": [ {
-      "displayName": "complaintment",
+      "displayName": "mail_content",
       "required": true,
       "entityType": "@sys.any",
       "fillBehavior": {
@@ -26,16 +26,43 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Geri bildiriminiz için teşekkür ederiz.\nKonu : $session.params.category_name\nİçerik : $session.params.complaintment\nİlgili ekiplerle paylaşılması için onaylıyor musunuz?" ]
+          "text": [ "Geri bildiriminiz için teşekkür ederiz.\nKonu : $session.params.mail_subject\nİçerik : $session.params.mail_content\nİlgili ekiplerle paylaşılması için onaylıyor musunuz?" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "event": {
+              "event": "ApproveYes"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Evet",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "ApproveNo"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Hayır",
+            "type": "button"
+          } ] ]
         },
         "languageCode": "tr"
       } ],
       "setParameterActions": [ {
-        "parameter": "category_name",
-        "value": "$session.params.category_name"
+        "parameter": "mail_content",
+        "value": "$session.params.mail_content"
       }, {
-        "parameter": "complaintment",
-        "value": "$session.params.complaintment"
+        "parameter": "mail_subject",
+        "value": "$session.params.mail_subject"
       } ],
       "nextActionOverride": {
       

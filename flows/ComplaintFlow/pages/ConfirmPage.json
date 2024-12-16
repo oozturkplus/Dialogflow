@@ -8,15 +8,48 @@
     "intent": "ConfirmNo",
     "condition": "true",
     "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Paylaşımı onaylamadınız. Yeni bir şikayet iletmek ister misiniz?" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "event": {
+              "event": "Yes"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Evet",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "No"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Hayır",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "tr"
+      } ],
       "setParameterActions": [ {
-        "parameter": "complaintment",
+        "parameter": "mail_content",
         "value": null
       } ],
       "nextActionOverride": {
       
       }
     },
-    "targetPage": "Start Page",
+    "targetPage": "RouteComplaintmentPage",
     "name": "1d427f1f-c4ab-4b1a-bb06-b43606e42438"
   }, {
     "intent": "ConfirmYes",
@@ -24,7 +57,34 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Konu : $session.params.category_name\nİçerik : $session.params.complaintment\nEn yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
+          "text": [ "Konu : $session.params.mail_subject\nİçerik : $session.params.mail_content\nEn yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "event": {
+              "event": "NewSessionYes"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Evet",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "NewSessionNo"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Hayır",
+            "type": "button"
+          } ] ]
         },
         "languageCode": "tr"
       } ],
@@ -52,5 +112,96 @@
       }
     },
     "name": "4da2d395-99f0-4014-9fcd-edb004a1509c"
+  }, {
+    "targetFlow": "TransitionFlow",
+    "event": "ApproveYes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Konu : $session.params.mail_subject\r\nİçerik : $session.params.mail_content\r\nEn yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "event": {
+              "event": "NewSessionYes"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Evet",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "NewSessionNo"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Hayır",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "tr"
+      } ],
+      "webhook": "send_mail_ik",
+      "tag": "Mail Gönderildi.",
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "ApproveYes"
+      } ]
+    },
+    "name": "8cd334fa-b53c-4d25-81f8-44c09461994b"
+  }, {
+    "targetPage": "RouteComplaintmentPage",
+    "event": "ApproveNo",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Paylaşımı onaylamadınız. Yeni bir şikayet iletmek ister misiniz?" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "event": {
+              "event": "Yes"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Evet",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "No"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Hayır",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "tr"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "ApproveNo"
+      }, {
+        "parameter": "mail_content",
+        "value": null
+      } ]
+    },
+    "name": "fe0ead3b-22ca-4ac5-9c65-29e0b030425a"
   } ]
 }
