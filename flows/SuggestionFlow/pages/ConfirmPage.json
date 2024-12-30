@@ -52,7 +52,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Konu : $session.params.mail_subject\nİçerik : $session.params.mail_content\nEn yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
+          "text": [ "En yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
         },
         "languageCode": "tr"
       }, {
@@ -110,7 +110,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Konu : $session.params.mail_subject\r\nİçerik : $session.params.mail_content\r\nEn yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
+          "text": [ "En yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
         },
         "languageCode": "tr"
       }, {
@@ -155,7 +155,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Paylaşımı onaylamadınız. Yeni bir şikayet iletmek ister misiniz?" ]
+          "text": [ "Paylaşımı onaylamadınız. Yeni bir öneri iletmek ister misiniz?" ]
         },
         "languageCode": "tr"
       }, {

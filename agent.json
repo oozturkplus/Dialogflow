@@ -1,7 +1,8 @@
 {
   "displayName": "Ortak Agent",
   "defaultLanguageCode": "tr",
-  "timeZone": "America/Los_Angeles",
+  "timeZone": "Europe/Moscow",
+  "enableLogging": true,
   "projectNumber": 823196520765,
   "speechToTextSettings": {
   
@@ -22,7 +23,8 @@
     
     },
     "loggingSettings": {
-      "enableStackdriverLogging": true
+      "enableStackdriverLogging": true,
+      "enableInteractionLogging": true
     }
   },
   "speakerIdSettings": {

@@ -143,5 +143,18 @@
       } ]
     },
     "name": "d5c6c17c-4a9d-48d4-ae9a-f0fd0390a7f4"
+  }, {
+    "targetFlow": "SuggestionFlow",
+    "event": "Oneri",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.selectedoption",
+        "value": "Oneri"
+      }, {
+        "parameter": "$session.params.mail_subject",
+        "value": "Öneri"
+      } ]
+    },
+    "name": "5a4fe85f-ce25-47f7-94c1-daf2a48b5c51"
   } ]
 }

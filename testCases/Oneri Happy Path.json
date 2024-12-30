@@ -1,0 +1,136 @@
+{
+  "name": "3e90063d-6d01-4c32-b787-3846e713aaef",
+  "displayName": "Oneri Happy Path",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "merhaba"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Öneri"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "SuggestionIntent"
+      },
+      "currentPage": {
+        "name": "SuggestionPage",
+        "flow": "SuggestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Lütfen önerinizi yazınız." ]
+      } ],
+      "currentFlow": {
+        "name": "SuggestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yemekler düzelsin"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "ConfirmPage",
+        "flow": "SuggestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Geri bildiriminiz için teşekkür ederiz.\nİlgili ekiplerle paylaşılması için onaylıyor musunuz?" ]
+      } ],
+      "currentFlow": {
+        "name": "SuggestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Evet"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "ConfirmYes"
+      },
+      "currentPage": {
+        "name": "TransitionPage",
+        "flow": "TransitionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "En yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
+      } ],
+      "currentFlow": {
+        "name": "TransitionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hayır"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirm.no"
+      },
+      "currentPage": {
+        "name": "ConfirmPage",
+        "flow": "SuggestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Size yeniden destek olabilmek için her zaman buradayım.\nİyi günler dilerim." ]
+      } ],
+      "currentFlow": {
+        "name": "SuggestionFlow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1734505662,
+    "nanos": 235712000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "tr"
+}

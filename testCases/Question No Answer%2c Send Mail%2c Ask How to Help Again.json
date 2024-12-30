@@ -1,0 +1,158 @@
+{
+  "name": "aa079488-0d58-4689-be9f-903ab189edd2",
+  "displayName": "Question No Answer, Send Mail, Ask How to Help Again",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "merhaba"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Soru"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "QuestionIntent"
+      },
+      "currentPage": {
+        "name": "Soru",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Sorunuzu yazınız" ]
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hava durumu"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Soru",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Sizi anladığımdan emin değilim.\nLütfen sorunuzu farklı bir şekilde yeniden yazınız." ],
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hava durumu"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Soru",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Sizi anladığımdan emin değilim.\nLütfen sorunuzu farklı bir şekilde yeniden yazınız." ],
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hava durumu"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "SoruGonder",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Sorunuzun yanıtlanması için konuyu ilgili birime aktardım. En kısa sürede sizinle iletişime geçilecektir.\nSize başka bir konuda daha yardımcı olabilir miyim?" ],
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "evet"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "ConfirmYes"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1734506520,
+    "nanos": 387352000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "tr"
+}

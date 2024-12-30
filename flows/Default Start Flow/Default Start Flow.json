@@ -8,7 +8,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
+          "text": [ "Merhaba, Ben Vestel Dijital Asistanı\nSize nasıl yardımcı olabilirim?\nLütfen seçiniz:" ]
         },
         "languageCode": "tr"
       }, {
@@ -50,6 +50,8 @@
         },
         "languageCode": "tr"
       } ],
+      "webhook": " decode-sso-token",
+      "tag": "Token çözümlendi.",
       "nextActionOverride": {
       
       }
@@ -74,6 +76,8 @@
   }, {
     "intent": "ComplaintIntent",
     "triggerFulfillment": {
+      "webhook": "save-dialog",
+      "tag": "akış kaydedildi",
       "setParameterActions": [ {
         "parameter": "$session.params.mail_subject",
         "value": "Şikayet"
@@ -124,6 +128,8 @@
     "targetFlow": "ComplaintFlow",
     "event": "Sikayet",
     "triggerFulfillment": {
+      "webhook": "save-dialog",
+      "tag": "akış kaydedildi.",
       "setParameterActions": [ {
         "parameter": "$session.params.selectedoption",
         "value": "Sikayet"
@@ -176,6 +182,55 @@
       } ]
     },
     "name": "4ee8e33b-ae05-4c4e-96c3-ba98a7d35cba"
+  }, {
+    "event": "firstspeak",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "event": {
+              "event": "Soru"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Soru",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Oneri"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Öneri",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Sikayet"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Şikayet",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "tr"
+      } ]
+    },
+    "name": "e0d89612-24f8-4e3f-ab60-f63f5521bbb8"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",

@@ -1,5 +1,12 @@
 {
   "trainingPhrases": [ {
+    "parts": [ {
+      "text": "slm",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
     "id": "6846981d-fff8-41ed-bcbe-f2e6bb8c2507",
     "parts": [ {
       "text": "selam",

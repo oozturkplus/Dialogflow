@@ -1,12 +1,12 @@
 {
-  "name": "e8f9cf6e-2db3-48b7-a965-b8b0cd050d62",
-  "displayName": "Şikayet Mail Testi",
+  "name": "b16fdc2d-cc3d-4c7b-82ba-e390c64da42e",
+  "displayName": "Sikayet, Happy Path",
   "testCaseConversationTurns": [ {
     "userInput": {
       "isWebhookEnabled": true,
       "input": {
         "text": {
-          "text": "Selam"
+          "text": "merhaba"
         },
         "languageCode": "tr"
       }
@@ -16,16 +16,14 @@
         "name": "Default Welcome Intent"
       },
       "currentPage": {
-        "name": "CategorySelectionPage",
-        "flow": "CategoryFlow"
+        "name": "Start Page",
+        "flow": "Default Start Flow"
       },
       "textResponses": [ {
-        "text": [ "Merhaba, Ben Vestel Dijital Asistanı. Size nasıl yardımcı olabilirim?\n\n\n" ]
-      }, {
-        "text": [ "1. Öneri\n2. Şikayet\n3. Soru\nHangi kategoriyi seçiyorsunuz?" ]
+        "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
       } ],
       "currentFlow": {
-        "name": "CategoryFlow"
+        "name": "Default Start Flow"
       }
     }
   }, {
@@ -33,12 +31,15 @@
       "isWebhookEnabled": true,
       "input": {
         "text": {
-          "text": "Şikayetim var"
+          "text": "şikayet"
         },
         "languageCode": "tr"
       }
     },
     "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "ComplaintIntent"
+      },
       "currentPage": {
         "name": "ComplaintPage",
         "flow": "ComplaintFlow"
@@ -55,21 +56,21 @@
       "isWebhookEnabled": true,
       "input": {
         "text": {
-          "text": "Her şey çok zor"
+          "text": "yemeklerde hiç kuzu tandır çıkmıyor"
         },
         "languageCode": "tr"
       }
     },
     "virtualAgentOutput": {
       "currentPage": {
-        "name": "TransitionPage",
-        "flow": "TransitionFlow"
+        "name": "ConfirmPage",
+        "flow": "ComplaintFlow"
       },
       "textResponses": [ {
-        "text": [ "Geri bildiriminiz için teşekkür ederiz.\nKonu : Şikayet\nİöerik : Her şey çok zor\nEn yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
+        "text": [ "Geri bildiriminiz için teşekkür ederiz.\nİlgili ekiplerle paylaşılması için onaylıyor musunuz?" ]
       } ],
       "currentFlow": {
-        "name": "TransitionFlow"
+        "name": "ComplaintFlow"
       }
     }
   }, {
@@ -77,30 +78,34 @@
       "isWebhookEnabled": true,
       "input": {
         "text": {
-          "text": "Hayır"
+          "text": "evet"
         },
         "languageCode": "tr"
       }
     },
     "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "ConfirmYes"
+      },
       "currentPage": {
-        "name": "ComplaintPage",
-        "flow": "ComplaintFlow"
+        "name": "TransitionPage",
+        "flow": "TransitionFlow"
       },
       "textResponses": [ {
-        "text": [ "Size yeniden destek olabilmek için her zaman buradayım.\r\nİyi günler dilerim." ]
+        "text": [ "En yakın zamanda size dönüş yapılacaktır. Size başka bir konuda daha yardımcı olabilir miyim?" ]
       } ],
       "currentFlow": {
-        "name": "ComplaintFlow"
+        "name": "TransitionFlow"
       }
     }
   } ],
   "creationTime": {
-    "seconds": 1733270707,
-    "nanos": 571935000
+    "seconds": 1734507118,
+    "nanos": 266297000
   },
   "testConfig": {
-    "flow": "Default Start Flow"
+    "flow": "Default Start Flow",
+    "page": "Start Page"
   },
   "languageCode": "tr"
 }

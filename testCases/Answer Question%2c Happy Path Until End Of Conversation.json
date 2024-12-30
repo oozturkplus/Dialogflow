@@ -1,0 +1,143 @@
+{
+  "name": "901b9968-b33e-4b9c-acb1-0cd93b76546a",
+  "displayName": "Answer Question, Happy Path Until End Of Conversation",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "merhaba"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "soru"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "QuestionIntent"
+      },
+      "currentPage": {
+        "name": "Soru",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Sorunuzu yazınız" ]
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "doğum izni hakkında bilgi almak istiyorum"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "SoruConfirm",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Zorlu Holding'de doğum izni, İş Kanunu'na göre uygulanır. Kadın çalışan doğumdan önce 8 hafta ve doğumdan sonra 8 hafta olmak üzere toplam 16 haftalık süre için çalıştırılmaması esastır. Çoğul gebelik halinde doğumdan önce çalıştırılmayacak 8 haftalık süreye 2 hafta süre eklenir. Kadın çalışan sağlık durumunun uygun olduğunun doktor raporuyla belgelendirmesi halinde doğumdan önceki üç haftaya kadar (37. hafta) işyerinde çalışabilir. Bu durumda, çalıştığı süreler doğum sonrası sürelere eklenir. Kadın çalışan erken doğum yapması halinde ise doğumdan önce kullanmadığı çalıştırılmayan süreler, doğum sonrası sürelere eklenmek suretiyle kullandırılır. Kadın çalışanlar, gebe olduklarının sağlık raporuyla tespitinden itibaren doğuma kadar geçen sürede gece çalışmaya zorlanamazlar. Yeni doğum yapmış çalışan doğumu izleyen bir yıl boyunca gece çalıştırılamaz." ],
+        "containAiGeneratedContent": true,
+        "containDataStoreContent": true,
+        "containAttemptedDataStoreInteractions": true
+      }, {
+        "text": [ "Bu cevap size yardımcı oldu mu?" ],
+        "containAiGeneratedContent": true,
+        "containDataStoreContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "evet"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.yes"
+      },
+      "currentPage": {
+        "name": "IsThereAnyOtherThing",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Size başka bir konuda daha yardımcı olabilir miyim?" ]
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hayır"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirm.no"
+      },
+      "currentPage": {
+        "name": "End",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Size yeniden destek olabilmek için her zaman buradayım.\nİyi günler dilerim." ]
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1734504783,
+    "nanos": 685440000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow"
+  },
+  "languageCode": "tr"
+}

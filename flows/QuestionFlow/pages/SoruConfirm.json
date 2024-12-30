@@ -10,6 +10,33 @@
         "text": [ "Bu cevap size yardımcı oldu mu?" ]
       },
       "languageCode": "tr"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "event": {
+            "event": "AnswerHelped"
+          },
+          "icon": {
+            "color": "#FF9800",
+            "type": "chevron_right"
+          },
+          "mode": "blocking",
+          "text": "Evet",
+          "type": "button"
+        }, {
+          "event": {
+            "event": "AnswerNotHelped"
+          },
+          "icon": {
+            "color": "#FF9800",
+            "type": "chevron_right"
+          },
+          "mode": "blocking",
+          "text": "Hayır",
+          "type": "button"
+        } ] ]
+      },
+      "languageCode": "tr"
     } ],
     "nextActionOverride": {
     
@@ -32,5 +59,20 @@
     },
     "targetPage": "Soru",
     "name": "cd6fb5e6-b156-46dc-a52f-b649f5631d8c"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "IsThereAnyOtherThing",
+    "event": "AnswerHelped",
+    "triggerFulfillment": {
+    
+    },
+    "name": "57a4f4e4-2a9d-48ee-b407-d15ebadd044c"
+  }, {
+    "targetPage": "Soru",
+    "event": "AnswerNotHelped",
+    "triggerFulfillment": {
+    
+    },
+    "name": "f8c86c74-0c33-49c5-b15d-6b5d9ffe3ecb"
   } ]
 }

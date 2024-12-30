@@ -1,0 +1,92 @@
+{
+  "name": "26940119-a76a-4fb4-a498-21838fc8fab8",
+  "displayName": "Static Answer - İcra",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "merhaba"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "soru"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "QuestionIntent"
+      },
+      "currentPage": {
+        "name": "Soru",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Sorunuzu yazınız" ]
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "icra kesintim hakkında bilgi almak istiyorum"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "SoruConfirm",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "İcra kesintisi hakkında daha detaylı bilgi için İK ofisi ile görüşebilirsiniz. 02362330131 telefon numarasından ulaşabilirsiniz. Ayrıca, İcra bilginizi e-devletten görebilirsiniz." ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      }, {
+        "text": [ "Bu cevap size yardımcı oldu mu?" ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1734507019,
+    "nanos": 442292000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "tr"
+}

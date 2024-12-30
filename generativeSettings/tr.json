@@ -33,6 +33,7 @@
         "filterLevel": "BLOCK_SOME"
       } ]
     },
+    "defaultBannedPhraseMatchStrategy": "PARTIAL_MATCH",
     "responsibleAiFilters": [ {
       "category": "DANGEROUS_CONTENT",
       "filterLevel": "MINIMAL_BLOCKING"
@@ -63,6 +64,9 @@
   "languageCode": "tr",
   "knowledgeConnectorSettings": {
     "business": "Vestel",
+    "groundingSettings": {
+      "groundingConfidence": "LOW"
+    },
     "mainLlmConfig": {
     
     }

@@ -26,7 +26,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Geri bildiriminiz için teşekkür ederiz.\nKonu : $session.params.mail_subject\nİçerik : $session.params.mail_content\nİlgili ekiplerle paylaşılması için onaylıyor musunuz?" ]
+          "text": [ "Geri bildiriminiz için teşekkür ederiz.\nİlgili ekiplerle paylaşılması için onaylıyor musunuz?" ]
         },
         "languageCode": "tr"
       }, {

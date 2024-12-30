@@ -1,0 +1,92 @@
+{
+  "name": "94dfe1c9-ba86-49e0-ad84-f6e6463a352e",
+  "displayName": "Static Answer, Loan",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "merhaba"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Soru"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "QuestionIntent"
+      },
+      "currentPage": {
+        "name": "Soru",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Sorunuzu yazınız" ]
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "kredi hakkında bilgi almak istiyorum"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "SoruConfirm",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "MERHABALAR ;İŞE GIRIŞINIZDEN 1 YILINIZ DOLDU ISE DÜĞÜN, SAĞLIK, EĞITIM, ICRA VB. IHTIYAÇLARINIZ IÇIN BELGELENEBILIR ISE MAAŞINIZIN 2 KATINI ALABILIRSINIZ DIJITAL IK OFISINDEN ENDUSTRIYEL ILISKILER ILE ILETISIME GECMENIZ GEREKIR, ENDUSTRIYELILISKILER@VESTEL.COM.TR MAIL ADRESINE MAIL ATABILIRSINIZ. ALDIĞINIZ TUTAR 6 EŞIT TAKSITLE MAAŞINIZDAN KESILIR. BILGINIZE SUNAR SAĞLIKLI GÜNLER DILERIZ." ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      }, {
+        "text": [ "Bu cevap size yardımcı oldu mu?" ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1734506745,
+    "nanos": 286753000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "tr"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ee5e768f-1f34-4f7f-958f-5f93519fa11c",
+  "displayName": "save-dialog",
+  "genericWebService": {
+    "uri": "https://us-central1-ikya-sor.cloudfunctions.net/save-dialog",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

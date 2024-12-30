@@ -61,14 +61,9 @@
     },
     "name": "dbc5c0bb-501e-402f-a32d-bf6226c5816e"
   }, {
+    "targetPage": "SoruGonder",
     "event": "sys.no-match-2",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Sizi anladığımdan emin değilim.\nLütfen sorunuzu farklı bir şekilde yeniden yazınız." ]
-        },
-        "languageCode": "tr"
-      } ],
       "setParameterActions": [ {
         "parameter": "soru_content",
         "value": "$request.user-utterance"
@@ -81,15 +76,6 @@
       }
     },
     "name": "8ddd00c6-49a2-4dc8-8ea5-3482d7e9b044"
-  }, {
-    "targetPage": "SoruGonder",
-    "event": "sys.no-match-3",
-    "triggerFulfillment": {
-      "nextActionOverride": {
-      
-      }
-    },
-    "name": "c15381e9-f96a-437f-b7b5-8acadc57e43b"
   } ],
   "knowledgeConnectorSettings": {
     "enabled": true,

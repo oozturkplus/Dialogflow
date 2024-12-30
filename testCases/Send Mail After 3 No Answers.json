@@ -1,0 +1,133 @@
+{
+  "name": "d1500d37-00d0-4e13-b010-78d7d82e66ad",
+  "displayName": "Send Mail After 3 No Answers",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "merhaba"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Soru"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "QuestionIntent"
+      },
+      "currentPage": {
+        "name": "Soru",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Sorunuzu yazınız" ]
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "abc"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Soru",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Sizi anladığımdan emin değilim.\nLütfen sorunuzu farklı bir şekilde yeniden yazınız." ],
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "def"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Soru",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Sizi anladığımdan emin değilim.\nLütfen sorunuzu farklı bir şekilde yeniden yazınız." ],
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "def"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "SoruGonder",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Sorunuzun yanıtlanması için konuyu ilgili birime aktardım. En kısa sürede sizinle iletişime geçilecektir.\nSize başka bir konuda daha yardımcı olabilir miyim?" ],
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1734503675,
+    "nanos": 411808000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "tr"
+}
