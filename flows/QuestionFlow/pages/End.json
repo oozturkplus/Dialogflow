@@ -10,9 +10,80 @@
         "text": [ "Size yeniden destek olabilmek için her zaman buradayım.\nİyi günler dilerim." ]
       },
       "languageCode": "tr"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "event": {
+            "event": "StartNewChat"
+          },
+          "icon": {
+            "color": "#FF9800",
+            "type": "chevron_right"
+          },
+          "mode": "blocking",
+          "text": "Yeni Görüşme Başlatmak İstiyorum",
+          "type": "button"
+        } ] ]
+      },
+      "languageCode": "tr"
     } ],
     "nextActionOverride": {
     
     }
-  }
+  },
+  "eventHandlers": [ {
+    "targetFlow": "Default Start Flow",
+    "event": "StartNewChat",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "event": {
+              "event": "Soru"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Soru",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Oneri"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Öneri",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Sikayet"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Şikayet",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "tr"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "mail_subject",
+        "value": ""
+      } ]
+    },
+    "name": "cd78e4ca-98f0-408c-a9eb-705305c3e494"
+  } ]
 }

@@ -1,9 +1,9 @@
 {
-  "displayName": "Ortak Agent",
+  "displayName": "IKYA SOR",
   "defaultLanguageCode": "tr",
   "timeZone": "Europe/Moscow",
   "enableLogging": true,
-  "projectNumber": 823196520765,
+  "projectNumber": 526257225444,
   "speechToTextSettings": {
   
   },
@@ -30,11 +30,66 @@
   "speakerIdSettings": {
   
   },
+  "customPayloadTemplates": [ {
+    "displayName": "CategorySelectionTemplate",
+    "payload": {
+      "richContent": [ [ {
+        "event": {
+          "event": "Soru"
+        },
+        "icon": {
+          "color": "#FF9800",
+          "type": "chevron_right"
+        },
+        "mode": "blocking",
+        "text": "Soru",
+        "type": "button"
+      }, {
+        "event": {
+          "event": "Oneri"
+        },
+        "icon": {
+          "color": "#FF9800",
+          "type": "chevron_right"
+        },
+        "mode": "blocking",
+        "text": "Öneri",
+        "type": "button"
+      }, {
+        "event": {
+          "event": "Sikayet"
+        },
+        "icon": {
+          "color": "#FF9800",
+          "type": "chevron_right"
+        },
+        "mode": "blocking",
+        "text": "Şikayet",
+        "type": "button"
+      } ] ]
+    }
+  }, {
+    "displayName": "StartNewChatSession",
+    "payload": {
+      "richContent": [ [ {
+        "event": {
+          "event": "StartNewChat"
+        },
+        "icon": {
+          "color": "#FF9800",
+          "type": "chevron_right"
+        },
+        "mode": "blocking",
+        "text": "Yeni Görüşme Başlatmak İstiyorum",
+        "type": "button"
+      } ] ]
+    }
+  } ],
   "textToSpeechSettings": {
   
   },
   "genAppBuilderSettings": {
-    "engine": "projects/823196520765/locations/global/collections/default_collection/engines/3870e9ca-933e-4bb0-b1c7-535cd66f564e"
+    "engine": "projects/526257225444/locations/global/collections/default_collection/engines/0900c769-acc0-44f2-8355-68e1f0a6bfef"
   },
   "duplexSettings": {
   

@@ -1,0 +1,71 @@
+{
+  "name": "3a5a8941-19a0-4324-bf3f-1b9e24228a72",
+  "displayName": "SoruGonderConfirm",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Sorunuzun yanıtlanması için konuyu ilgili birime “$session.params.mail_content” şeklinde mail olarak gönderilmesini onaylıyor musunuz?" ]
+      },
+      "languageCode": "tr"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "event": {
+            "event": "VerifySend"
+          },
+          "icon": {
+            "color": "#FF9800",
+            "type": "chevron_right"
+          },
+          "mode": "blocking",
+          "text": "Evet",
+          "type": "button"
+        }, {
+          "event": {
+            "event": "NotVerifySend"
+          },
+          "icon": {
+            "color": "#FF9800",
+            "type": "chevron_right"
+          },
+          "mode": "blocking",
+          "text": "Hayır",
+          "type": "button"
+        } ] ]
+      },
+      "languageCode": "tr"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SoruGonder",
+    "name": "fc4a4a3b-43fb-4d62-8dac-bad54dd076f3"
+  }, {
+    "intent": "confirm.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "WantToAskNewQuestion",
+    "name": "fa695efa-46d5-4ef4-8377-bd793c589404"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "SoruGonder",
+    "event": "VerifySend",
+    "triggerFulfillment": {
+    
+    },
+    "name": "4508a943-635d-4f06-a6da-dd35edff4fa1"
+  }, {
+    "event": "NotVerifySend",
+    "triggerFulfillment": {
+    
+    },
+    "name": "8fc72a6d-31ab-40a1-bb1a-1a6f8374d050"
+  } ]
+}

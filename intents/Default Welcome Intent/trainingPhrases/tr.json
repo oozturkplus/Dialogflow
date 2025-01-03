@@ -1,6 +1,27 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "sa",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "nbr",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
+      "text": "selamınaleyküm",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "tr"
+  }, {
+    "parts": [ {
       "text": "slm",
       "auto": true
     } ],

@@ -2,7 +2,7 @@
   "name": "29429d1b-04f7-4df2-942d-ba696a452c74",
   "displayName": " decode-sso-token",
   "genericWebService": {
-    "uri": "https://us-central1-ikya-sor.cloudfunctions.net/decode-sso-token",
+    "uri": "https://us-central1-vesteliksor.cloudfunctions.net/ParseJWTTOken_TestEnvironment",
     "webhookType": "STANDARD"
   },
   "timeout": {

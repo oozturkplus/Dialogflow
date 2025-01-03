@@ -61,7 +61,7 @@
     },
     "name": "dbc5c0bb-501e-402f-a32d-bf6226c5816e"
   }, {
-    "targetPage": "SoruGonder",
+    "targetPage": "SoruGonderConfirm",
     "event": "sys.no-match-2",
     "triggerFulfillment": {
       "setParameterActions": [ {
@@ -97,7 +97,7 @@
     "targetPage": "SoruConfirm",
     "dataStoreConnections": [ {
       "dataStoreType": "UNSTRUCTURED",
-      "dataStore": "projects/823196520765/locations/global/collections/default_collection/dataStores/ik-ya-sor-v2-data-store_1731488592652",
+      "dataStore": "projects/526257225444/locations/global/collections/default_collection/dataStores/ikyasor-unstructured_1735543628826",
       "languageCode": "tr",
       "documentProcessingMode": "CHUNKS",
       "aclConfig": {
@@ -105,7 +105,7 @@
       }
     }, {
       "dataStoreType": "STRUCTURED",
-      "dataStore": "projects/823196520765/locations/global/collections/default_collection/dataStores/ikyasor-faq-data_1733321804791",
+      "dataStore": "projects/526257225444/locations/global/collections/default_collection/dataStores/ikysasor-faqdata_1735543854597",
       "languageCode": "tr",
       "documentProcessingMode": "DOCUMENTS",
       "aclConfig": {

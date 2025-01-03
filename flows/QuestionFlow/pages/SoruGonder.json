@@ -7,7 +7,7 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "Sorunuzun yanıtlanması için konuyu ilgili birime aktardım. En kısa sürede sizinle iletişime geçilecektir.\nSize başka bir konuda daha yardımcı olabilir miyim?" ]
+        "text": [ "Sorunuz ilgili birime aktarılmıştır.\nSize başka bir konuda daha yardımcı olabilir miyim?" ]
       },
       "languageCode": "tr"
     } ],

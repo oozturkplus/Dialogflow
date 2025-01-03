@@ -1,0 +1,72 @@
+{
+  "name": "15cd17e0-1498-4476-b4f9-4d591b342e23",
+  "displayName": "WantToAskNewQuestion",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Yeni bir soru sormak ister misiniz?" ]
+      },
+      "languageCode": "tr"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "event": {
+            "event": "AskNewQuestion"
+          },
+          "icon": {
+            "color": "#FF9800",
+            "type": "chevron_right"
+          },
+          "mode": "blocking",
+          "text": "Evet",
+          "type": "button"
+        }, {
+          "event": {
+            "event": "NotAskNewQuestion"
+          },
+          "icon": {
+            "color": "#FF9800",
+            "type": "chevron_right"
+          },
+          "mode": "blocking",
+          "text": "Hayır",
+          "type": "button"
+        } ] ]
+      },
+      "languageCode": "tr"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "QuestionFlow",
+    "name": "e5bb9b51-9e62-4af8-a40f-c94fda767e2e"
+  }, {
+    "intent": "confirm.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "IsThereAnyOtherThing",
+    "name": "0e4b6485-1100-4fe9-baf5-be6488080bfe"
+  } ],
+  "eventHandlers": [ {
+    "targetFlow": "QuestionFlow",
+    "event": "AskNewQuestion",
+    "triggerFulfillment": {
+    
+    },
+    "name": "36635786-669f-4af0-83fe-1a879731bfb0"
+  }, {
+    "targetPage": "IsThereAnyOtherThing",
+    "event": "NotAskNewQuestion",
+    "triggerFulfillment": {
+    
+    },
+    "name": "6c5cabf9-1036-4101-aa4a-51a015d0a9e6"
+  } ]
+}
