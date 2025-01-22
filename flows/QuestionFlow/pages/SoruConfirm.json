@@ -71,7 +71,10 @@
     "targetPage": "Soru",
     "event": "AnswerNotHelped",
     "triggerFulfillment": {
-    
+      "setParameterActions": [ {
+        "parameter": "$session.params.answer",
+        "value": "notenough"
+      } ]
     },
     "name": "f8c86c74-0c33-49c5-b15d-6b5d9ffe3ecb"
   } ]

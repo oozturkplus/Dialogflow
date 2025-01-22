@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "Can you summarize and fit below sentence to 256 characters?\n$last-user-utterance",
+    "languageCode": "tr"
+  } ]
+}

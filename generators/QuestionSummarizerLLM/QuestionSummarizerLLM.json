@@ -1,0 +1,13 @@
+{
+  "name": "019e317a-53a3-4083-92e8-35029ae7bec2",
+  "displayName": "QuestionSummarizerLLM",
+  "modelParameter": {
+    "temperature": 0,
+    "maxDecodeSteps": 294,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash-002"
+  }
+}

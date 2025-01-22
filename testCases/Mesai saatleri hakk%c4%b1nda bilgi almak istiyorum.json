@@ -1,0 +1,43 @@
+{
+  "name": "56e4513a-590c-4de0-8e40-d91f8b6ddc80",
+  "tags": [ "#puantaj" ],
+  "displayName": "Mesai saatleri hakkında bilgi almak istiyorum",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Mesai saatleri hakkında bilgi almak istiyorum"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "SoruConfirm",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Mesai saatleriniz hakkında ayrıntılı bilgi almak için puantajvetahakkuk@vestel.com.tr adresine mail atabilirsiniz. Dilerseniz 0236 233 0131  santral telefon numarasından Puantaj ve Tahakkuk bölümünü bağlatabilirsiniz. " ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      }, {
+        "text": [ "Bu cevap size yardımcı oldu mu?" ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1736861059,
+    "nanos": 353065000
+  },
+  "testConfig": {
+    "flow": "QuestionFlow",
+    "page": "Soru"
+  },
+  "languageCode": "tr"
+}

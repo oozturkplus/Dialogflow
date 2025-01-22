@@ -76,6 +76,13 @@
       }
     },
     "name": "8ddd00c6-49a2-4dc8-8ea5-3482d7e9b044"
+  }, {
+    "targetPage": "LongQuestion",
+    "event": "sys.long-utterance",
+    "triggerFulfillment": {
+    
+    },
+    "name": "2b0a75e3-4765-4b11-ac31-4de8b939e88d"
   } ],
   "knowledgeConnectorSettings": {
     "enabled": true,

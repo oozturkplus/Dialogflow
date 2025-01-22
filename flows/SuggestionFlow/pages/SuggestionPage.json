@@ -57,8 +57,6 @@
         },
         "languageCode": "tr"
       } ],
-      "webhook": "send_mail_ik",
-      "tag": "Mail gönderildi.",
       "setParameterActions": [ {
         "parameter": "mail_content",
         "value": "$session.params.mail_content"

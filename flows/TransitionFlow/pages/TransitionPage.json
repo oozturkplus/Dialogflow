@@ -40,12 +40,27 @@
     },
     "name": "8347cbc4-64f6-4bcc-ab6c-6a3945b2b612"
   }, {
-    "targetPage": "End Flow",
     "event": "NewSessionNo",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
           "text": [ "Size yeniden destek olabilmek için her zaman buradayım.\r\nİyi günler dilerim." ]
+        },
+        "languageCode": "tr"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "event": {
+              "event": "StartNewChat"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Yeni Görüşme Başlatmak İstiyorum",
+            "type": "button"
+          } ] ]
         },
         "languageCode": "tr"
       } ],
@@ -55,5 +70,62 @@
       } ]
     },
     "name": "1e27149d-396b-4c16-af1b-0310885f42ad"
+  }, {
+    "targetFlow": "Default Start Flow",
+    "event": "StartNewChat",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Merhaba, Ben Vestel Dijital Asistanı\r\nSize nasıl yardımcı olabilirim?\r\nLütfen seçiniz:" ]
+        },
+        "languageCode": "tr"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "event": {
+              "event": "Soru"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Soru",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Oneri"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Öneri",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Sikayet"
+            },
+            "icon": {
+              "color": "#FF9800",
+              "type": "chevron_right"
+            },
+            "mode": "blocking",
+            "text": "Şikayet",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "tr"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "mail_subject",
+        "value": null
+      }, {
+        "parameter": "mail_content",
+        "value": null
+      } ]
+    },
+    "name": "c6e3460d-2ab0-4b1b-8dff-4d74b41b7362"
   } ]
 }

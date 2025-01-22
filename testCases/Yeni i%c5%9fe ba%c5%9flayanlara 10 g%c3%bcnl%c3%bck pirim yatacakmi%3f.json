@@ -1,0 +1,43 @@
+{
+  "name": "3eb9b5df-1861-4af9-94af-13561dca95ec",
+  "tags": [ "#puantaj" ],
+  "displayName": "Yeni işe başlayanlara 10 günlük pirim yatacakmi?",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Yeni işe başlayanlara 10 günlük pirim yatacakmi?"
+        },
+        "languageCode": "tr"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "SoruConfirm",
+        "flow": "QuestionFlow"
+      },
+      "textResponses": [ {
+        "text": [ "Puantaj için puantajvetahakkuk@vestel.com.tr adresine mail atabilirsiniz. Dilerseniz 0236 233 0131 santral telefon numarasından Puantaj ve Tahakkuk bölümünü bağlatabilirsiniz. " ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      }, {
+        "text": [ "Bu cevap size yardımcı oldu mu?" ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "QuestionFlow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1736860747,
+    "nanos": 538661000
+  },
+  "testConfig": {
+    "flow": "QuestionFlow",
+    "page": "Soru"
+  },
+  "languageCode": "tr"
+}
