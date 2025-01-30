@@ -61,9 +61,14 @@
     },
     "name": "dbc5c0bb-501e-402f-a32d-bf6226c5816e"
   }, {
-    "targetPage": "SoruGonderConfirm",
     "event": "sys.no-match-2",
     "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sizi anladığımdan emin değilim.\r\nLütfen sorunuzu farklı bir şekilde yeniden yazınız." ]
+        },
+        "languageCode": "tr"
+      } ],
       "setParameterActions": [ {
         "parameter": "soru_content",
         "value": "$request.user-utterance"
@@ -71,6 +76,14 @@
         "parameter": "$session.params.mail_content",
         "value": "$request.user-utterance"
       } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      },
       "nextActionOverride": {
       
       }
@@ -83,6 +96,27 @@
     
     },
     "name": "2b0a75e3-4765-4b11-ac31-4de8b939e88d"
+  }, {
+    "targetPage": "SoruGonderConfirm",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "soru_content",
+        "value": "$request.user-utterance"
+      }, {
+        "parameter": "$session.params.mail_content",
+        "value": "$request.user-utterance"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "name": "dfe3eae6-edc8-440a-9ea8-f43330390efd"
   } ],
   "knowledgeConnectorSettings": {
     "enabled": true,
